@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/metal_parts/static/css/main.cd4f30ac.chunk.css",
+    "main.js": "/metal_parts/static/js/main.7ed40a51.chunk.js",
+    "main.js.map": "/metal_parts/static/js/main.7ed40a51.chunk.js.map",
+    "runtime-main.js": "/metal_parts/static/js/runtime-main.303e6eaf.js",
+    "runtime-main.js.map": "/metal_parts/static/js/runtime-main.303e6eaf.js.map",
+    "static/js/2.5607b29b.chunk.js": "/metal_parts/static/js/2.5607b29b.chunk.js",
+    "static/js/2.5607b29b.chunk.js.map": "/metal_parts/static/js/2.5607b29b.chunk.js.map",
+    "index.html": "/metal_parts/index.html",
+    "static/css/main.cd4f30ac.chunk.css.map": "/metal_parts/static/css/main.cd4f30ac.chunk.css.map",
+    "static/js/2.5607b29b.chunk.js.LICENSE.txt": "/metal_parts/static/js/2.5607b29b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.303e6eaf.js",
+    "static/js/2.5607b29b.chunk.js",
+    "static/css/main.cd4f30ac.chunk.css",
+    "static/js/main.7ed40a51.chunk.js"
+  ]
+}
