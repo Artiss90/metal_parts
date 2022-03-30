@@ -1,0 +1,35 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+/*? for 3 column  */
+.item_main {
+  /* 2 margin & 3 blocks */
+  /* width: calc((100% - (2 * 10px)) / 3); */
+  width: 386px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.item_main:nth-child(3n + 3) {
+  margin-right: 0;
+}
+.item_main:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+/*? for 2 column  */
+.item_second {
+  /* 1 margin & 2 blocks */
+  /* width: calc((100% - (1 * 10px)) / 2); */
+  width: 585px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.item_second:nth-child(2n + 2) {
+  margin-right: 0;
+}
+.item_second:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}

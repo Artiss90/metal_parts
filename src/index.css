@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --color-text-black: rgba(62, 62, 62, 1);
+  --color-text-second: rgba(174, 174, 174, 1);
+  --color-text-white: rgba(255, 255, 255, 1);
+  --color-decor: rgba(228, 181, 107, 1);
+  --color-bg-label: rgba(62, 62, 62, 0.9);
+  --color-bg-footer: rgba(248, 248, 248, 1);
+  --font-family-main: 'Raleway';
+  --font-weight-main: 400;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, var(--font-family-main),
+    sans-serif;
+  font-weight: var(--font-weight-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-text-black);
+}
+
+/* Обнуляем заглавления */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+/* обнуляем, убираем маркировку списка */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* обнуляем р */
+p {
+  margin: 0;
+}
+/* убираем стиль ссилок */
+a {
+  /* убираем подчёркивания */
+  text-decoration: none;
+  /* убираем курсив */
+  font-style: normal;
+  /* добавляем наследование */
+  color: inherit;
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

@@ -1,0 +1,55 @@
+.wrapper {
+  position: relative;
+  height: 871px;
+}
+
+.containerCartGroupService {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-right: 90px;
+  padding-bottom: 40px;
+  padding-left: 90px;
+}
+
+.containerCartGroupService > ul + ul {
+  margin-top: 10px;
+}
+.title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 42px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+}
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  /* calc center */
+  right: calc((100% - 82px) / 2);
+  width: 82px;
+  height: 2px;
+  background-color: var(--color-decor);
+}
+
+.bntCalc {
+  margin-top: 30px;
+  padding: 10px 30px;
+  width: 379px;
+  height: 43px;
+  background-color: rgba(69, 70, 71, 1);
+  color: var(--color-text-white);
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23.48px;
+}

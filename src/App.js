@@ -1,12 +1,10 @@
-import Cart from './components/Cart/Cart';
+import SectionService from 'components/SectionService/SectionSecvice';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Cart>
-        <p>text</p>
-      </Cart>
+      <SectionService />
     </div>
   );
 }

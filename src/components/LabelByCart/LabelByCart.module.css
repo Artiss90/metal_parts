@@ -1,0 +1,29 @@
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 333px;
+  height: 56px;
+  margin-top: 31px;
+  background-color: var(--color-bg-label);
+}
+.container::after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  width: 2px;
+  height: 46px;
+  background-color: var(--color-decor);
+}
+.title {
+  padding-left: 15px;
+  color: var(--color-text-white);
+  font-weight: 500;
+}
+.description {
+  padding-left: 15px;
+  color: var(--color-text-white);
+  font-weight: 400;
+}
