@@ -1,9 +1,9 @@
 import React from 'react';
-import Cart from 'components/Cart/Cart';
+import Cart from 'components/CartGroupService/Cart/Cart';
 import sn from 'classnames';
 
 import style from './CartGroupService.module.css';
-import LabelByCart from 'components/LabelByCart/LabelByCart';
+import LabelByCart from 'components/CartGroupService/LabelByCart/LabelByCart';
 
 function CartGroupService({ groupImg = [], col = 3 }) {
   return (

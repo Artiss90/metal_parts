@@ -10,7 +10,7 @@ import img7 from 'img/jpg/Rectangle 23last.jpg';
 import img8 from 'img/jpg/Rectangle 24last.jpg';
 
 import style from './SectionService.module.css';
-import SpinningPart from 'components/SpinningPart/SpinningPart';
+import SpinningPart from 'components/SectionService/SpinningPart/SpinningPart';
 
 function SectionService(props) {
   const imgGroupFirst = [
@@ -59,7 +59,7 @@ function SectionService(props) {
           transform: 'rotate(60deg)',
         }}
       />
-      <section className={style.containerCartGroupService}>
+      <section className={style.containerCartGroupService} id="Service">
         <h2 className={style.title}>Услуги</h2>
         <CartGroupService groupImg={imgGroupFirst} col={3} />
         <CartGroupService groupImg={imgGroupSecond} col={2} />

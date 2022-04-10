@@ -1,0 +1,11 @@
+.logo{
+    width: 123px;height: 90px;
+}
+.header {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 11px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+}
