@@ -9,7 +9,7 @@ import style from './Tools.module.css';
 function Tools(props) {
   return (
     <div className={style.tools}>
-      <button type="button" onClick>
+      <button type="button">
         <img src={iconSearch} alt="search" title="search" />
       </button>
       <ul className={style.listFlag}>
