@@ -1,9 +1,26 @@
 .tools{
     display: flex;
+    align-items: flex-end;
 }
+.btnSearch{
+    padding: 0;
+    padding-right: 23px;
+    background: inherit;
+    border: none;
+    cursor: pointer;
+}
+
 .listFlag{
     display: flex;
     flex-direction: column;
     height: 21px;
     overflow-y: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btnFlag{
+    padding: 0;
+    background: inherit;
+    border: none;
+    cursor: pointer;
 }

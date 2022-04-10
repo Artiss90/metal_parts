@@ -9,22 +9,22 @@ import style from './Tools.module.css';
 function Tools(props) {
   return (
     <div className={style.tools}>
-      <button type="button">
+      <button type="button" className={style.btnSearch}>
         <img src={iconSearch} alt="search" title="search" />
       </button>
       <ul className={style.listFlag}>
         <li>
-          <button>
+          <button className={style.btnFlag}>
             <img src={iconRU} alt="RU" />
           </button>
         </li>
         <li>
-          <button>
+          <button className={style.btnFlag}>
             <img src={iconUA} alt="UA" />
           </button>
         </li>
         <li>
-          <button>
+          <button className={style.btnFlag}>
             <img src={iconEN} alt="EN" />
           </button>
         </li>
