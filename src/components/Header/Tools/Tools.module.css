@@ -2,12 +2,45 @@
     display: flex;
     align-items: flex-end;
 }
+.containerSearch{
+    position: relative;
+    padding-right: 23px;
+}
 .btnSearch{
     padding: 0;
-    padding-right: 23px;
     background: inherit;
     border: none;
     cursor: pointer;
+}
+.btnSearch.inField{
+    position: absolute;
+    right: 22px;
+    top: 11px;
+}
+.btnSearch.show{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fieldSearch{
+    position: absolute;
+    z-index: 5;
+    right: 0px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms linear;
+}
+.fieldSearch.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.inputSearch{
+    padding-left: 31px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 332px;
+    height: 41px;
+    background: rgba(241, 241, 241, 1);
 }
 
 .listFlag{
@@ -23,8 +56,10 @@
     pointer-events: none;
     transition: opacity 250ms linear;
 }
-.listFlag.show{opacity: 1;
-pointer-events: auto;}
+.listFlag.show{
+    opacity: 1;
+    pointer-events: auto;
+}
 
 .itemFlag {padding-bottom: 15px;}
 .itemFlag:nth-child(1){padding-bottom: 31px;}

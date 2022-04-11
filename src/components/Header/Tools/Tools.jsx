@@ -11,11 +11,27 @@ import sn from 'classnames';
 import style from './Tools.module.css';
 
 function Tools() {
+  const [isShowFieldSearch, setIsShowFieldSearch] = useState(false);
   const [isShowListFlags, setIsShowListFlags] = useState(false);
   const [[visibleFlagIcon, visibleFlagTitle], setVisibleFlag] = useState([
     iconRU,
     'RU',
   ]);
+  const [value, setValue] = useState('');
+
+  const toggleShowFieldSearch = () => setIsShowFieldSearch(!isShowFieldSearch);
+  const onChangeSearch = e => {
+    e.preventDefault();
+    setValue(e.target.value);
+  };
+  const onSearch = target => {
+    // ? there will be logic search
+    //************ */
+    // *clear value by input
+    setValue('');
+    // *hidden input
+    toggleShowFieldSearch();
+  };
 
   const toggleShowFlags = () => setIsShowListFlags(!isShowListFlags);
 
@@ -26,9 +42,34 @@ function Tools() {
 
   return (
     <div className={style.tools}>
-      <button type="button" className={style.btnSearch}>
-        <img src={iconSearch} alt="search" title="search" />
-      </button>
+      <div className={style.containerSearch}>
+        <button
+          type="button"
+          className={sn(style.btnSearch, { [style.show]: isShowFieldSearch })}
+          onClick={() => toggleShowFieldSearch()}
+        >
+          <img src={iconSearch} alt="search" title="search" />
+        </button>
+
+        <div
+          className={sn(style.fieldSearch, { [style.show]: isShowFieldSearch })}
+        >
+          <input
+            type="text"
+            className={style.inputSearch}
+            placeholder="Поиск"
+            value={value}
+            onChange={onChangeSearch}
+          />
+          <button
+            type="button"
+            className={sn(style.btnSearch, style.inField)}
+            onClick={() => onSearch(value)}
+          >
+            <img src={iconSearch} alt="search" title="search" />
+          </button>
+        </div>
+      </div>
 
       <div className={style.containerFlags}>
         <ButtonFlag
