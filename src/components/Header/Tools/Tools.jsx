@@ -17,11 +17,11 @@ function Tools() {
     'RU',
   ]);
 
-  const toggleShow = () => setIsShowListFlags(!isShowListFlags);
+  const toggleShowFlags = () => setIsShowListFlags(!isShowListFlags);
 
   const onChangeVisibleFlag = (icon, title) => {
     setVisibleFlag([icon, title]);
-    toggleShow();
+    toggleShowFlags();
   };
 
   return (
@@ -34,7 +34,7 @@ function Tools() {
         <ButtonFlag
           srcFlag={visibleFlagIcon}
           title={visibleFlagTitle}
-          onClick={() => toggleShow()}
+          onClick={() => toggleShowFlags()}
         >
           <img
             src={iconArrow}

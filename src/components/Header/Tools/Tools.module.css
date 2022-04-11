@@ -20,9 +20,11 @@
     padding-left: 10px;
     padding-right: 10px;
     opacity: 0;
+    pointer-events: none;
     transition: opacity 250ms linear;
 }
-.listFlag.show{opacity: 1;}
+.listFlag.show{opacity: 1;
+pointer-events: auto;}
 
 .itemFlag {padding-bottom: 15px;}
 .itemFlag:nth-child(1){padding-bottom: 31px;}
