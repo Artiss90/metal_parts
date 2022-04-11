@@ -1,21 +1,37 @@
 {
   "files": {
-    "main.css": "/metal_parts/static/css/main.cd4f30ac.chunk.css",
-    "main.js": "/metal_parts/static/js/main.9f5874ce.chunk.js",
-    "main.js.map": "/metal_parts/static/js/main.9f5874ce.chunk.js.map",
+    "main.css": "/metal_parts/static/css/main.9d69d56e.chunk.css",
+    "main.js": "/metal_parts/static/js/main.978cedeb.chunk.js",
+    "main.js.map": "/metal_parts/static/js/main.978cedeb.chunk.js.map",
     "runtime-main.js": "/metal_parts/static/js/runtime-main.303e6eaf.js",
     "runtime-main.js.map": "/metal_parts/static/js/runtime-main.303e6eaf.js.map",
-    "static/js/2.5607b29b.chunk.js": "/metal_parts/static/js/2.5607b29b.chunk.js",
-    "static/js/2.5607b29b.chunk.js.map": "/metal_parts/static/js/2.5607b29b.chunk.js.map",
+    "static/css/2.bc922b9c.chunk.css": "/metal_parts/static/css/2.bc922b9c.chunk.css",
+    "static/js/2.9255a8e1.chunk.js": "/metal_parts/static/js/2.9255a8e1.chunk.js",
+    "static/js/2.9255a8e1.chunk.js.map": "/metal_parts/static/js/2.9255a8e1.chunk.js.map",
     "index.html": "/metal_parts/index.html",
-    "static/css/main.cd4f30ac.chunk.css.map": "/metal_parts/static/css/main.cd4f30ac.chunk.css.map",
-    "static/js/2.5607b29b.chunk.js.LICENSE.txt": "/metal_parts/static/js/2.5607b29b.chunk.js.LICENSE.txt",
-    "static/media/Rectangle 17.4ad76fa9.jpg": "/metal_parts/static/media/Rectangle 17.4ad76fa9.jpg"
+    "static/css/2.bc922b9c.chunk.css.map": "/metal_parts/static/css/2.bc922b9c.chunk.css.map",
+    "static/css/main.9d69d56e.chunk.css.map": "/metal_parts/static/css/main.9d69d56e.chunk.css.map",
+    "static/js/2.9255a8e1.chunk.js.LICENSE.txt": "/metal_parts/static/js/2.9255a8e1.chunk.js.LICENSE.txt",
+    "static/media/Flag_of_Russia 1.a984bcdd.svg": "/metal_parts/static/media/Flag_of_Russia 1.a984bcdd.svg",
+    "static/media/Flag_of_Ukraine 1ua.cc26d411.svg": "/metal_parts/static/media/Flag_of_Ukraine 1ua.cc26d411.svg",
+    "static/media/Flag_of_the_United_Kingdom.931da678.svg": "/metal_parts/static/media/Flag_of_the_United_Kingdom.931da678.svg",
+    "static/media/Rectangle 17.4ad76fa9.jpg": "/metal_parts/static/media/Rectangle 17.4ad76fa9.jpg",
+    "static/media/Rectangle 18.1ce976ef.jpg": "/metal_parts/static/media/Rectangle 18.1ce976ef.jpg",
+    "static/media/Rectangle 19.d63a9f87.jpg": "/metal_parts/static/media/Rectangle 19.d63a9f87.jpg",
+    "static/media/Rectangle 20.8ca594e5.jpg": "/metal_parts/static/media/Rectangle 20.8ca594e5.jpg",
+    "static/media/Rectangle 21.d3140d4f.jpg": "/metal_parts/static/media/Rectangle 21.d3140d4f.jpg",
+    "static/media/Rectangle 22.a14c2eac.jpg": "/metal_parts/static/media/Rectangle 22.a14c2eac.jpg",
+    "static/media/Rectangle 23last.93305274.jpg": "/metal_parts/static/media/Rectangle 23last.93305274.jpg",
+    "static/media/Rectangle 24last.2567f4c7.jpg": "/metal_parts/static/media/Rectangle 24last.2567f4c7.jpg",
+    "static/media/Vectorparts.84e20a0d.svg": "/metal_parts/static/media/Vectorparts.84e20a0d.svg",
+    "static/media/Vectorsearch.9d4e8486.svg": "/metal_parts/static/media/Vectorsearch.9d4e8486.svg",
+    "static/media/down arrow.38f6481e.svg": "/metal_parts/static/media/down arrow.38f6481e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.303e6eaf.js",
-    "static/js/2.5607b29b.chunk.js",
-    "static/css/main.cd4f30ac.chunk.css",
-    "static/js/main.9f5874ce.chunk.js"
+    "static/css/2.bc922b9c.chunk.css",
+    "static/js/2.9255a8e1.chunk.js",
+    "static/css/main.9d69d56e.chunk.css",
+    "static/js/main.978cedeb.chunk.js"
   ]
 }
