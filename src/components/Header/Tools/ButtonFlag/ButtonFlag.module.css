@@ -1,0 +1,13 @@
+.btnFlag {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.iconFlag {
+    width: 31px;
+    height: 21px;
+}

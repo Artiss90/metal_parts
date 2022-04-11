@@ -13,14 +13,26 @@
 .listFlag{
     display: flex;
     flex-direction: column;
-    height: 21px;
-    overflow-y: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
     padding-left: 10px;
     padding-right: 10px;
+    opacity: 0;
+    transition: opacity 250ms linear;
 }
-.btnFlag{
-    padding: 0;
-    background: inherit;
-    border: none;
-    cursor: pointer;
+.listFlag.show{opacity: 1;}
+
+.itemFlag {padding-bottom: 15px;}
+.itemFlag:nth-child(1){padding-bottom: 31px;}
+
+.iconArrow{
+    width: 8px;
+    height: 14px;
+    margin-left: 13px;
 }
+.iconArrow.turn{transform: rotate(0.5turn);}
+
+.containerFlags{ position: relative;
+padding-left: 10px;}
