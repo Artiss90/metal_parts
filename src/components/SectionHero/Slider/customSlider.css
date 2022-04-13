@@ -1,0 +1,52 @@
+.slick-dots{
+    bottom: 15px;
+/* чтоб ширина не занимала весь родительський блок  */
+    width: auto; 
+/* центрируем     */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 7px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    background: var(--color-decor);
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    content: '';
+    background-color: var(--color-text-white);
+    border-radius: 50%;
+    text-align: center;
+    opacity: 1;
+    /* color: var(--color-text-white); */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
