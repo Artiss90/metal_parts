@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/metal_parts/static/css/main.8f954623.chunk.css",
-    "main.js": "/metal_parts/static/js/main.eb774c55.chunk.js",
-    "main.js.map": "/metal_parts/static/js/main.eb774c55.chunk.js.map",
+    "main.js": "/metal_parts/static/js/main.674e7739.chunk.js",
+    "main.js.map": "/metal_parts/static/js/main.674e7739.chunk.js.map",
     "runtime-main.js": "/metal_parts/static/js/runtime-main.303e6eaf.js",
     "runtime-main.js.map": "/metal_parts/static/js/runtime-main.303e6eaf.js.map",
     "static/css/2.e14ceb4a.chunk.css": "/metal_parts/static/css/2.e14ceb4a.chunk.css",
@@ -12,6 +12,7 @@
     "static/css/2.e14ceb4a.chunk.css.map": "/metal_parts/static/css/2.e14ceb4a.chunk.css.map",
     "static/css/main.8f954623.chunk.css.map": "/metal_parts/static/css/main.8f954623.chunk.css.map",
     "static/js/2.8001d7f3.chunk.js.LICENSE.txt": "/metal_parts/static/js/2.8001d7f3.chunk.js.LICENSE.txt",
+    "static/media/Banner.e2623203.jpg": "/metal_parts/static/media/Banner.e2623203.jpg",
     "static/media/Flag_of_Russia 1.a984bcdd.svg": "/metal_parts/static/media/Flag_of_Russia 1.a984bcdd.svg",
     "static/media/Flag_of_Ukraine 1ua.cc26d411.svg": "/metal_parts/static/media/Flag_of_Ukraine 1ua.cc26d411.svg",
     "static/media/Flag_of_the_United_Kingdom.931da678.svg": "/metal_parts/static/media/Flag_of_the_United_Kingdom.931da678.svg",
@@ -27,7 +28,6 @@
     "static/media/Rectangle 25company2.e6150455.jpg": "/metal_parts/static/media/Rectangle 25company2.e6150455.jpg",
     "static/media/Vectorparts.84e20a0d.svg": "/metal_parts/static/media/Vectorparts.84e20a0d.svg",
     "static/media/Vectorsearch.9d4e8486.svg": "/metal_parts/static/media/Vectorsearch.9d4e8486.svg",
-    "static/media/baner.e2623203.jpg": "/metal_parts/static/media/baner.e2623203.jpg",
     "static/media/down arrow.38f6481e.svg": "/metal_parts/static/media/down arrow.38f6481e.svg",
     "static/media/facebook.f3ef089b.svg": "/metal_parts/static/media/facebook.f3ef089b.svg",
     "static/media/google.83733469.svg": "/metal_parts/static/media/google.83733469.svg",
@@ -40,6 +40,6 @@
     "static/css/2.e14ceb4a.chunk.css",
     "static/js/2.8001d7f3.chunk.js",
     "static/css/main.8f954623.chunk.css",
-    "static/js/main.eb774c55.chunk.js"
+    "static/js/main.674e7739.chunk.js"
   ]
 }
