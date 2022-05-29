@@ -1,8 +1,33 @@
 .icon {
   position: absolute;
   z-index: 0;
-}
 
+  /* transition-property: transform;
+  transition-duration: 2000ms;
+  transition-timing-function: ease-in-out;
+
+  transition-delay: 0; */
+}
+.icon:nth-child(1) {
+  top: 465px;
+  left: 10px;
+  transform: rotate(-135deg);
+}
+.icon:nth-child(2) {
+  top: 229px;
+  left: 10px;
+  transform: rotate(-135deg);
+}
+.icon:nth-child(3) {
+  top: 225px;
+  right: 20px;
+  transform: rotate(60deg);
+}
+.icon:nth-child(4) {
+  top: 430px;
+  right: 35px;
+  transform: rotate(60deg);
+}
 .iconBig {
   width: 209px;
   height: 209px;
@@ -10,4 +35,21 @@
 .iconNormal {
   width: 177px;
   height: 177px;
+}
+.icon.rotate {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  /* animation-iteration-count: infinite; */
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

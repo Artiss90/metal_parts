@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import CartGroupService from 'components/CartGroupService/CartGroupService';
 import img1 from 'img/jpg/Rectangle 17.jpg';
 import img2 from 'img/jpg/Rectangle 18.jpg';
@@ -26,39 +26,66 @@ function SectionService(props) {
     [img7, 'Аренда техники'],
     [img8, 'Ремонт техники'],
   ];
+
+  const [onSpinning, setOnSpinning] = useState(false);
+
+  const memoizedCallbackOnSpin = useCallback(() => {
+    const onSpin = () => {
+      setOnSpinning(true);
+
+      setTimeout(() => {
+        setOnSpinning(false);
+      }, 2000);
+    };
+
+    onSpin(onSpinning);
+  }, [onSpinning]);
+
+  useEffect(() => {
+    if (!onSpinning) {
+      window.addEventListener('scroll', memoizedCallbackOnSpin);
+    }
+
+    return () => window.removeEventListener('scroll', memoizedCallbackOnSpin);
+  }, [memoizedCallbackOnSpin, onSpinning]);
+
   return (
     <div className={style.wrapper}>
       <SpinningPart
+        onSpinning={onSpinning}
         size="normal"
-        styleInline={{
-          top: '465px',
-          left: '10px',
-          transform: 'rotate(-135deg)',
-        }}
+        // customStyle={{
+        //   top: '465px',
+        //   left: '10px',
+        //   transform: 'rotate(-135deg)',
+        // }}
       />
       <SpinningPart
+        onSpinning={onSpinning}
         size="big"
-        styleInline={{
-          top: '229px',
-          left: '10px',
-          transform: 'rotate(-135deg)',
-        }}
+        // customStyle={{
+        //   top: '229px',
+        //   left: '10px',
+        //   transform: 'rotate(-135deg)',
+        // }}
       />
       <SpinningPart
+        onSpinning={onSpinning}
         size="normal"
-        styleInline={{
-          top: '225px',
-          right: '20px',
-          transform: 'rotate(60deg)',
-        }}
+        // customStyle={{
+        //   top: '225px',
+        //   right: '20px',
+        //   transform: 'rotate(60deg)',
+        // }}
       />
       <SpinningPart
+        onSpinning={onSpinning}
         size="big"
-        styleInline={{
-          top: '430px',
-          right: '35px',
-          transform: 'rotate(60deg)',
-        }}
+        // customStyle={{
+        //   top: '430px',
+        //   right: '35px',
+        //   transform: 'rotate(60deg)',
+        // }}
       />
       <section className={style.containerCartGroupService} id="Service">
         <TitleBySection>Услуги</TitleBySection>
