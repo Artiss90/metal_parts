@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  width: 1360px;
+  height: 300px;
+  /* top, right, bottom, left */
+  padding: 0px 30px 100px 90px;
+}
+.container a:hover,
+.container a:focus {
+  color: var(--color-decor);
+}
+.container > div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.container > div:nth-child(1) {
+  padding-right: 222px;
+}
+.container > div:nth-child(2) {
+  padding-left: 40px;
+}
+.container > div:nth-child(3) {
+  padding-left: 145px;
+}
+.container > div:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 1px;
+  height: 55px;
+  background-color: var(--color-decor);
+}
+
+.container > div:nth-child(1) .list {
+  margin-top: 30px;
+}
+.container > div:nth-child(2) .list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 462px;
+  margin-top: 30px;
+}
+.container > div:nth-child(2) .list > li {
+  width: calc(100% / 2);
+}
+.container > div:nth-child(2) .list > li:nth-child(2n + 2) {
+  padding-left: 60px;
+}
+
+.item {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  color: var(--color-text-second);
+  white-space: nowrap;
+}
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.address {
+  margin-top: 9px;
+}
+
+.itemAddress {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.socialList {
+  margin-top: 15px;
+  display: flex;
+}
+.socialItem {
+  margin-right: 15px;
+}
+.socialItem:last-child {
+  margin-right: 0px;
+}

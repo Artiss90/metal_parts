@@ -1,3 +1,4 @@
+import Footer from 'components/Footer/Footer';
 import Header from 'components/Header/Header';
 import SectionHero from 'components/SectionHero/SectionHero';
 import SectionOurCompany from 'components/SectionOurCompany/SectionOurCompany';
@@ -11,6 +12,7 @@ function App() {
       <SectionHero />
       <SectionService />
       <SectionOurCompany />
+      <Footer />
     </div>
   );
 }

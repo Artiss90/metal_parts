@@ -19,7 +19,7 @@ function SectionOurCompany() {
     ],
   ];
   return (
-    <section className={style.container}>
+    <section className={style.container} id="OurCompany">
       <TitleBySection inlineStyle={{ marginBottom: '30px' }}>
         Наша компания
       </TitleBySection>

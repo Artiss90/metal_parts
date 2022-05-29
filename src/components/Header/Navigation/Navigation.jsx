@@ -42,12 +42,12 @@ function Navigation(props) {
           </a>
         </li>
         <li className={style.itemNav}>
-          <a href="#4" className={style.linkNav} data-selected={false}>
+          <a href="#OurCompany" className={style.linkNav} data-selected={false}>
             О нас
           </a>
         </li>
         <li className={style.itemNav}>
-          <a href="#5" className={style.linkNav} data-selected={false}>
+          <a href="#Footer" className={style.linkNav} data-selected={false}>
             Контакты
           </a>
         </li>
