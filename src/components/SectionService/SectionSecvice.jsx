@@ -11,6 +11,7 @@ import img8 from 'img/jpg/Rectangle 24last.jpg';
 
 import style from './SectionService.module.css';
 import SpinningPart from 'components/SectionService/SpinningPart/SpinningPart';
+import TitleBySection from 'components/common/TitleBySection/TitleBySection';
 
 function SectionService(props) {
   const imgGroupFirst = [
@@ -60,7 +61,7 @@ function SectionService(props) {
         }}
       />
       <section className={style.containerCartGroupService} id="Service">
-        <h2 className={style.title}>Услуги</h2>
+        <TitleBySection>Услуги</TitleBySection>
         <CartGroupService groupImg={imgGroupFirst} col={3} />
         <CartGroupService groupImg={imgGroupSecond} col={2} />
         <button type="button" className={style.bntCalc}>
