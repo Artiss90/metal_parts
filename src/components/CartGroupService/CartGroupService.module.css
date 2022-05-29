@@ -33,3 +33,12 @@
 .item_second:nth-last-child(-n + 2) {
   margin-bottom: 0;
 }
+
+/*? for 1 column  */
+.item_large {
+  width: 1360px;
+  margin-bottom: 30px;
+}
+.item_large:nth-last-child(-n + 1) {
+  margin-bottom: 0;
+}

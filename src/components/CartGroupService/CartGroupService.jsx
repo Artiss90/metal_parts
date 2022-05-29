@@ -14,10 +14,17 @@ function CartGroupService({ groupImg = [], col = 3 }) {
           className={sn(
             { [style.item_main]: col === 3 },
             { [style.item_second]: col === 2 },
+            { [style.item_large]: col === 1 },
           )}
         >
           <Cart imgSrc={imgSrc}>
-            <LabelByCart title={title} description={description} />
+            <LabelByCart
+              title={title}
+              description={description}
+              isLargeLabel={col === 1}
+              // every even is reverse if 1 column
+              isReverse={col === 1 && (index + 1) % 2 === 0}
+            />
           </Cart>
         </li>
       ))}

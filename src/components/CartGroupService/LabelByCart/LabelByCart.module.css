@@ -8,7 +8,7 @@
   margin-top: 31px;
   background-color: var(--color-bg-label);
 }
-.container::after {
+.container:not(.largeContainer)::after {
   content: '';
   position: absolute;
   right: 15px;
@@ -17,13 +17,54 @@
   height: 46px;
   background-color: var(--color-decor);
 }
+.largeContainer{
+  width: 750px;
+  height: 260px;
+  margin-top: 60px;
+}
+.largeContainer.isReverse{
+  right: 0px;
+}
+.largeContainer::after {
+  content: '';
+  position: absolute;
+  right: 61px;
+  top: 0px;
+  width: 2px;
+  height: 212px;
+  background-color: var(--color-decor);
+}
+.largeContainer.isReverse::after {
+  right: 670px;
+}
+
 .title {
   padding-left: 15px;
   color: var(--color-text-white);
   font-weight: 500;
+  font-size: 20px;
+  line-height: 60px;
 }
+.largeTitle {
+  padding-left: 88px;
+  font-size: 40px;
+}
+.largeTitle.isReverse {
+  padding-left: 115px;
+}
+
 .description {
-  padding-left: 15px;
   color: var(--color-text-white);
-  font-weight: 400;
+}
+.largeDescription {
+  margin-top: 25px;
+  padding-left: 90px;
+  padding-right: 115px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+.largeDescription.isReverse {
+  padding-left: 115px;
+  padding-right: 90px;
 }
