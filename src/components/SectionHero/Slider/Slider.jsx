@@ -1,6 +1,6 @@
 import React from 'react';
 import Slick from 'react-slick';
-import baner1 from 'img/jpg/baner.jpg';
+import baner1 from 'img/jpg/Banner.jpg';
 import baner2 from 'img/jpg/Rectangle 25company1.jpg';
 import baner3 from 'img/jpg/Rectangle 25company2.jpg';
 
