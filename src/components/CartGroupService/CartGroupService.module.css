@@ -36,8 +36,18 @@
 
 /*? for 1 column  */
 .item_large {
-  width: 1360px;
+  width: var(--widthContainer);
   margin-bottom: 30px;
+}
+@media screen and (max-width: 1360px) {
+  .item_large {
+    width: var(--widthContainerTablet);
+  }
+}
+@media screen and (max-width: 700px) {
+  .item_large {
+    width: var(--widthContainerMobile);
+  }
 }
 .item_large:nth-last-child(-n + 1) {
   margin-bottom: 0;

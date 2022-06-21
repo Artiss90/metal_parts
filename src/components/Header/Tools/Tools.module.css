@@ -1,75 +1,93 @@
-.tools{
-    display: flex;
-    align-items: flex-end;
+.tools {
+  display: flex;
+  align-items: flex-end;
 }
-.containerSearch{
-    position: relative;
-    padding-right: 23px;
+.containerSearch {
+  position: relative;
+  padding-right: 23px;
 }
-.btnSearch{
-    padding: 0;
-    background: inherit;
-    border: none;
-    cursor: pointer;
-}
-.btnSearch.inField{
-    position: absolute;
-    right: 22px;
-    top: 11px;
-}
-.btnSearch.show{
-    opacity: 0;
-    pointer-events: none;
-}
-
-.fieldSearch{
-    position: absolute;
-    z-index: 5;
-    right: 0px;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 250ms linear;
-}
-.fieldSearch.show{
-    opacity: 1;
-    pointer-events: auto;
-}
-.inputSearch{
-    padding-left: 31px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 332px;
-    height: 41px;
-    background: rgba(241, 241, 241, 1);
-}
-
-.listFlag{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 10;
-    padding-left: 10px;
+@media screen and (max-width: 1360px) {
+  .containerSearch {
     padding-right: 10px;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 250ms linear;
+  }
 }
-.listFlag.show{
-    opacity: 1;
-    pointer-events: auto;
+@media screen and (max-width: 700px) {
+  .containerSearch {
+    padding-right: 2px;
+  }
+}
+.btnSearch {
+  padding: 0;
+  background: inherit;
+  border: none;
+  cursor: pointer;
+}
+.btnSearch.inField {
+  position: absolute;
+  right: 22px;
+  top: 11px;
+}
+.btnSearch.show {
+  opacity: 0;
+  pointer-events: none;
 }
 
-.itemFlag {padding-bottom: 15px;}
-.itemFlag:nth-child(1){padding-bottom: 31px;}
-
-.iconArrow{
-    width: 8px;
-    height: 14px;
-    margin-left: 13px;
+.fieldSearch {
+  position: absolute;
+  z-index: 5;
+  right: 0px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms linear;
 }
-.iconArrow.turn{transform: rotate(0.5turn);}
+.fieldSearch.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.inputSearch {
+  padding-left: 31px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 332px;
+  height: 41px;
+  background: rgba(241, 241, 241, 1);
+}
 
-.containerFlags{ position: relative;
-padding-left: 10px;}
+.listFlag {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms linear;
+}
+.listFlag.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.itemFlag {
+  padding-bottom: 15px;
+}
+.itemFlag:nth-child(1) {
+  padding-bottom: 31px;
+}
+
+.iconArrow {
+  width: 8px;
+  height: 14px;
+  margin-left: 13px;
+}
+.iconArrow.turn {
+  transform: rotate(0.5turn);
+}
+
+.containerFlags {
+  position: relative;
+  padding-left: 10px;
+}
