@@ -27,6 +27,16 @@
   right: 22px;
   top: 11px;
 }
+@media screen and (max-width: 1360px) {
+  .btnSearch.inField {
+    right: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .btnSearch.inField {
+    right: 2px;
+  }
+}
 .btnSearch.show {
   opacity: 0;
   pointer-events: none;
@@ -36,9 +46,20 @@
   position: absolute;
   z-index: 5;
   right: 0px;
+  top: 32px;
   opacity: 0;
   pointer-events: none;
   transition: opacity 250ms linear;
+}
+@media screen and (max-width: 1360px) {
+  .fieldSearch {
+    top: 28px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .fieldSearch {
+    top: 25px;
+  }
 }
 .fieldSearch.show {
   opacity: 1;
@@ -51,6 +72,15 @@
   width: 332px;
   height: 41px;
   background: rgba(241, 241, 241, 1);
+}
+@media screen and (max-width: 700px) {
+  .inputSearch {
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 210px;
+    height: 41px;
+  }
 }
 
 .listFlag {
