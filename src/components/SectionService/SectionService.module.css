@@ -1,6 +1,16 @@
 .wrapper {
   position: relative;
-  /* height: 871px; */
+  height: 871px;
+}
+@media screen and (max-width: 1360px) {
+  .wrapper {
+    height: 1120px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .wrapper {
+    height: 580px;
+  }
 }
 
 .containerCartGroupService {
