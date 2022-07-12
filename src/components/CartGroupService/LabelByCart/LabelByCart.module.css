@@ -8,6 +8,12 @@
   margin-top: 31px;
   background-color: var(--color-bg-label);
 }
+@media screen and (max-width: 1360px) {
+  .container {
+    width: 275px;
+    margin-top: 25px;
+  }
+}
 .container:not(.largeContainer)::after {
   content: '';
   position: absolute;
@@ -17,12 +23,12 @@
   height: 46px;
   background-color: var(--color-decor);
 }
-.largeContainer{
+.largeContainer {
   width: 750px;
   height: 260px;
   margin-top: 60px;
 }
-.largeContainer.isReverse{
+.largeContainer.isReverse {
   right: 0px;
 }
 .largeContainer::after {
@@ -44,6 +50,15 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 60px;
+}
+@media screen and (max-width: 1360px) {
+  .title {
+    padding-left: 10px;
+    color: var(--color-text-white);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 48px;
+  }
 }
 .largeTitle {
   padding-left: 88px;

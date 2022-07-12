@@ -1,6 +1,6 @@
 .wrapper {
   position: relative;
-  height: 871px;
+  /* height: 871px; */
 }
 
 .containerCartGroupService {
@@ -14,6 +14,14 @@
   padding-right: 90px;
   padding-bottom: 40px;
   padding-left: 90px;
+}
+@media screen and (max-width: 1360px) {
+  .containerCartGroupService {
+    padding-top: 20px;
+    padding-right: 52px;
+    padding-bottom: 26px;
+    padding-left: 52px;
+  }
 }
 
 .containerCartGroupService > ul + ul {
