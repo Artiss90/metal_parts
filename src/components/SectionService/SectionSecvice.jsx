@@ -13,20 +13,20 @@ import style from './SectionService.module.css';
 import SpinningPart from 'components/SectionService/SpinningPart/SpinningPart';
 import TitleBySection from 'components/common/TitleBySection/TitleBySection';
 
-function SectionService(props) {
-  const imgGroupFirst = [
-    [img1, 'Производство оборудования'],
-    [img2, 'Металлическая мебель'],
-    [img3, 'Металлоконструкции'],
-    [img4, 'Металлообработка'],
-    [img5, 'Раскрой металла'],
-    [img6, 'Конструкторское бюро'],
-  ];
-  const imgGroupSecond = [
-    [img7, 'Аренда техники'],
-    [img8, 'Ремонт техники'],
-  ];
+const imgGroupFirst = [
+  [img1, 'Производство оборудования'],
+  [img2, 'Металлическая мебель'],
+  [img3, 'Металлоконструкции'],
+  [img4, 'Металлообработка'],
+  [img5, 'Раскрой металла'],
+  [img6, 'Конструкторское бюро'],
+];
+const imgGroupSecond = [
+  [img7, 'Аренда техники'],
+  [img8, 'Ремонт техники'],
+];
 
+function SectionService({ isWidthForDesktop }) {
   const [onSpinning, setOnSpinning] = useState(false);
 
   const memoizedCallbackOnSpin = useCallback(() => {
@@ -42,51 +42,28 @@ function SectionService(props) {
   }, [onSpinning]);
 
   useEffect(() => {
+    if (!isWidthForDesktop) {
+      // если ширина экрана меньше десктопной, то и анимировать нечего - выходим
+      return;
+    }
     if (!onSpinning) {
       window.addEventListener('scroll', memoizedCallbackOnSpin);
     }
 
     return () => window.removeEventListener('scroll', memoizedCallbackOnSpin);
-  }, [memoizedCallbackOnSpin, onSpinning]);
+  }, [isWidthForDesktop, memoizedCallbackOnSpin, onSpinning]);
 
   return (
     <div className={style.wrapper}>
-      <SpinningPart
-        onSpinning={onSpinning}
-        size="normal"
-        // customStyle={{
-        //   top: '465px',
-        //   left: '10px',
-        //   transform: 'rotate(-135deg)',
-        // }}
-      />
-      <SpinningPart
-        onSpinning={onSpinning}
-        size="big"
-        // customStyle={{
-        //   top: '229px',
-        //   left: '10px',
-        //   transform: 'rotate(-135deg)',
-        // }}
-      />
-      <SpinningPart
-        onSpinning={onSpinning}
-        size="normal"
-        // customStyle={{
-        //   top: '225px',
-        //   right: '20px',
-        //   transform: 'rotate(60deg)',
-        // }}
-      />
-      <SpinningPart
-        onSpinning={onSpinning}
-        size="big"
-        // customStyle={{
-        //   top: '430px',
-        //   right: '35px',
-        //   transform: 'rotate(60deg)',
-        // }}
-      />
+      {/* // если ширина экрана меньше десктопной SpinningPart не отбражаем */}
+      {isWidthForDesktop && (
+        <>
+          <SpinningPart onSpinning={onSpinning} size="normal" />
+          <SpinningPart onSpinning={onSpinning} size="big" />
+          <SpinningPart onSpinning={onSpinning} size="normal" />
+          <SpinningPart onSpinning={onSpinning} size="big" />
+        </>
+      )}
       <section className={style.containerCartGroupService} id="Service">
         <TitleBySection>Услуги</TitleBySection>
         <CartGroupService groupImg={imgGroupFirst} col={3} />
