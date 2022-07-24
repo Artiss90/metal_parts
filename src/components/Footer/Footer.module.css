@@ -91,3 +91,12 @@
 .socialItem:last-child {
   margin-right: 0px;
 }
+
+.title {
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--color-text-black);
+  white-space: nowrap;
+}

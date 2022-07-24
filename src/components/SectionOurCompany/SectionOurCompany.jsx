@@ -20,6 +20,7 @@ function SectionOurCompany() {
   ];
   return (
     <section className={style.container} id="OurCompany">
+      {/* //! replace inlineStyle*/}
       <TitleBySection inlineStyle={{ marginBottom: '30px' }}>
         Наша компания
       </TitleBySection>

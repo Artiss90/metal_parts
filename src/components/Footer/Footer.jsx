@@ -1,5 +1,3 @@
-import TitleBlockByFooter from 'components/common/TitleBlockByFooter/TitleBlockByFooter';
-
 // * icons
 import google from 'img/google.svg';
 import instagram from 'img/instagram.svg';
@@ -12,7 +10,7 @@ function Footer(props) {
   return (
     <footer className={style.container} id="Footer">
       <div>
-        <TitleBlockByFooter text="О компании" />
+        <h3 className={style.title}>О компании</h3>
         <ul className={style.list}>
           <li className={style.item}>
             <a href="/">Наши работы</a>
@@ -29,8 +27,7 @@ function Footer(props) {
         </ul>
       </div>
       <div>
-        <TitleBlockByFooter text="Услуги" />
-
+        <h3 className={style.title}>Услуги</h3>
         <ul className={style.list}>
           <li className={style.item}>
             <a href="#Service">Производство оборудования</a>
@@ -59,7 +56,7 @@ function Footer(props) {
         </ul>
       </div>
       <div>
-        <TitleBlockByFooter text="Контактная информация" />
+        <h3 className={style.title}>Контактная информация</h3>;
         <address className={style.address}>
           <p className={style.itemAddress}>
             Заводская улица, 2В, Буча,Киевская область, 08292"
