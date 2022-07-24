@@ -4,7 +4,7 @@
   list-style: none;
 }
 
-/*? for 3 column  */
+/*? for 3 column (little)  */
 .item_main {
   /* 2 margin & 3 blocks */
   /* width: calc((100% - (2 * 10px)) / 3); */
@@ -47,7 +47,7 @@
   }
 }
 
-/*? for 2 column  */
+/*? for 2 column (middle) */
 .item_second {
   /* 1 margin & 2 blocks */
   /* width: calc((100% - (1 * 10px)) / 2); */
@@ -85,7 +85,7 @@
   }
 }
 
-/*? for 1 column  */
+/*? for 1 column (large) */
 .item_large {
   width: var(--widthContainer);
   margin-bottom: 30px;
@@ -93,11 +93,13 @@
 @media screen and (max-width: 1360px) {
   .item_large {
     width: var(--widthContainerTablet);
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 700px) {
   .item_large {
     width: var(--widthContainerMobile);
+    margin-bottom: 10px;
   }
 }
 .item_large:nth-last-child(-n + 1) {

@@ -30,13 +30,13 @@
   height: 46px;
   background-color: var(--color-decor);
 }
-
 @media screen and (max-width: 700px) {
   .container:not(.largeContainer)::after {
     right: 8px;
     height: 16px;
   }
 }
+
 .largeContainer {
   width: 750px;
   height: 260px;
@@ -47,6 +47,13 @@
     width: 550px;
     height: 150px;
     margin-top: 40px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .largeContainer {
+    width: 300px;
+    height: 76px;
+    margin-top: 10px;
   }
 }
 .largeContainer.isReverse {
@@ -67,6 +74,12 @@
     height: 144px;
   }
 }
+@media screen and (max-width: 700px) {
+  .largeContainer::after {
+    right: 20px;
+    height: 72px;
+  }
+}
 .largeContainer.isReverse::after {
   right: 0;
   left: 75px;
@@ -74,6 +87,11 @@
 @media screen and (max-width: 1360px) {
   .largeContainer.isReverse::after {
     left: 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .largeContainer.isReverse::after {
+    left: 20px;
   }
 }
 
@@ -111,12 +129,23 @@
     font-size: 30px;
   }
 }
+@media screen and (max-width: 700px) {
+  .largeTitle {
+    padding-left: 7px;
+    font-size: 16px;
+  }
+}
 .largeTitle.isReverse {
   padding-left: 115px;
 }
 @media screen and (max-width: 1360px) {
   .largeTitle.isReverse {
     padding-left: 80px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .largeTitle.isReverse {
+    padding-left: 60px;
   }
 }
 
@@ -140,6 +169,15 @@
     font-size: 14px;
   }
 }
+@media screen and (max-width: 700px) {
+  .largeDescription {
+    margin-top: 5px;
+    padding-left: 7px;
+    padding-right: 60px;
+    font-weight: 300;
+    font-size: 8px;
+  }
+}
 .largeDescription.isReverse {
   padding-left: 115px;
   padding-right: 90px;
@@ -148,5 +186,11 @@
   .largeDescription.isReverse {
     padding-left: 80px;
     padding-right: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .largeDescription.isReverse {
+    padding-left: 60px;
+    padding-right: 7px;
   }
 }
