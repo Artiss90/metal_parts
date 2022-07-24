@@ -30,6 +30,7 @@
   height: 46px;
   background-color: var(--color-decor);
 }
+
 @media screen and (max-width: 700px) {
   .container:not(.largeContainer)::after {
     right: 8px;
@@ -40,6 +41,13 @@
   width: 750px;
   height: 260px;
   margin-top: 60px;
+}
+@media screen and (max-width: 1360px) {
+  .largeContainer {
+    width: 550px;
+    height: 150px;
+    margin-top: 40px;
+  }
 }
 .largeContainer.isReverse {
   right: 0px;
@@ -53,8 +61,20 @@
   height: 212px;
   background-color: var(--color-decor);
 }
+@media screen and (max-width: 1360px) {
+  .largeContainer::after {
+    right: 50px;
+    height: 144px;
+  }
+}
 .largeContainer.isReverse::after {
-  right: 670px;
+  right: 0;
+  left: 75px;
+}
+@media screen and (max-width: 1360px) {
+  .largeContainer.isReverse::after {
+    left: 50px;
+  }
 }
 
 .title {
@@ -80,12 +100,24 @@
     line-height: 20px;
   }
 }
+
 .largeTitle {
   padding-left: 88px;
   font-size: 40px;
 }
+@media screen and (max-width: 1360px) {
+  .largeTitle {
+    padding-left: 20px;
+    font-size: 30px;
+  }
+}
 .largeTitle.isReverse {
   padding-left: 115px;
+}
+@media screen and (max-width: 1360px) {
+  .largeTitle.isReverse {
+    padding-left: 80px;
+  }
 }
 
 .description {
@@ -97,9 +129,24 @@
   padding-right: 115px;
   font-weight: 500;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 1.24;
+}
+@media screen and (max-width: 1360px) {
+  .largeDescription {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 80px;
+    font-weight: 400;
+    font-size: 14px;
+  }
 }
 .largeDescription.isReverse {
   padding-left: 115px;
   padding-right: 90px;
+}
+@media screen and (max-width: 1360px) {
+  .largeDescription.isReverse {
+    padding-left: 80px;
+    padding-right: 20px;
+  }
 }

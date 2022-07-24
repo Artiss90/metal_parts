@@ -38,7 +38,7 @@ function App() {
       <Header />
       <SectionHero />
       <SectionService isWidthForDesktop={isWidthForDesktop} />
-      {/* <SectionOurCompany /> */}
+      <SectionOurCompany />
       {/* <Footer /> */}
     </div>
   );
