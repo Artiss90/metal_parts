@@ -8,6 +8,10 @@
   --font-family-main: 'Raleway';
   --font-weight-main: 400;
   --widthContainer: 1360px;
+  /* breakPointTablet = 1360px; */
+  --widthContainerTablet: 700px;
+  /* breakPointMobile = 700px; */
+  --widthContainerMobile: 320px;
 }
 
 html {
@@ -62,5 +66,6 @@ a {
 img {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: auto;
 }

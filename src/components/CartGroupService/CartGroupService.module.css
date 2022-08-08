@@ -4,7 +4,7 @@
   list-style: none;
 }
 
-/*? for 3 column  */
+/*? for 3 column (little)  */
 .item_main {
   /* 2 margin & 3 blocks */
   /* width: calc((100% - (2 * 10px)) / 3); */
@@ -12,14 +12,42 @@
   margin-right: 10px;
   margin-bottom: 10px;
 }
-.item_main:nth-child(3n + 3) {
-  margin-right: 0;
+@media screen and (max-width: 1360px) {
+  .item_main {
+    width: 295px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+  }
 }
-.item_main:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+@media screen and (max-width: 700px) {
+  .item_main {
+    width: 153px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+  }
+}
+@media screen and (min-width: 1361px) {
+  .item_main:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .item_main:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1361px) {
+  .item_main:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .item_main:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 
-/*? for 2 column  */
+/*? for 2 column (middle) */
 .item_second {
   /* 1 margin & 2 blocks */
   /* width: calc((100% - (1 * 10px)) / 2); */
@@ -27,17 +55,52 @@
   margin-right: 10px;
   margin-bottom: 10px;
 }
-.item_second:nth-child(2n + 2) {
-  margin-right: 0;
+@media screen and (max-width: 1360px) {
+  .item_second {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 6px;
+  }
 }
-.item_second:nth-last-child(-n + 2) {
-  margin-bottom: 0;
+@media screen and (max-width: 700px) {
+  .item_second {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 3px;
+  }
+}
+@media screen and (min-width: 1361px) {
+  .item_second:nth-child(2n + 2) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1361px) {
+  .item_second:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .item_second:nth-last-child(-n + 1) {
+    margin-bottom: 0;
+  }
 }
 
-/*? for 1 column  */
+/*? for 1 column (large) */
 .item_large {
-  width: 1360px;
+  width: var(--widthContainer);
   margin-bottom: 30px;
+}
+@media screen and (max-width: 1360px) {
+  .item_large {
+    width: var(--widthContainerTablet);
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .item_large {
+    width: var(--widthContainerMobile);
+    margin-bottom: 10px;
+  }
 }
 .item_large:nth-last-child(-n + 1) {
   margin-bottom: 0;

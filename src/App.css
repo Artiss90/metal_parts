@@ -4,3 +4,13 @@
   background-color: #fff;
   width: var(--widthContainer);
 }
+@media screen and (max-width: 1360px) {
+  .App {
+    width: var(--widthContainerTablet);
+  }
+}
+@media screen and (max-width: 700px) {
+  .App {
+    width: var(--widthContainerMobile);
+  }
+}

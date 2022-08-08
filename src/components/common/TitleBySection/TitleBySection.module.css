@@ -1,19 +1,32 @@
 .title {
-    position: relative;
-    text-align: center;
-    margin-bottom: 42px;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 60px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 42px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+}
+@media screen and (max-width: 700px) {
+  .title {
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    /* calc center */
-    right: calc((100% - 82px) / 2);
-    width: 82px;
-    height: 2px;
-    background-color: var(--color-decor);
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  /* calc center */
+  right: calc((100% - 82px) / 2);
+  width: 82px;
+  height: 2px;
+  background-color: var(--color-decor);
+}
+@media screen and (max-width: 700px) {
+  .title::after {
+    bottom: -4px;
+  }
 }

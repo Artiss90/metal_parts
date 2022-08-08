@@ -1,42 +1,110 @@
 .container {
-    width: 100%;
-    height: 448px;
+  width: 100%;
+  height: 448px;
 }
-.containerCart{
-    height: 448px;
+@media screen and (max-width: 1360px) {
+  .container {
+    height: 300px;
+  }
 }
-.img{
-    width: 100%;
-    height: 448px;
-    object-fit: cover;
-    cursor: grab;
+@media screen and (max-width: 700px) {
+  .container {
+    height: 150px;
+  }
 }
-.img:active{
-    cursor: grabbing;
+.containerCart {
+  height: 448px;
+}
+@media screen and (max-width: 1360px) {
+  .containerCart {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .containerCart {
+    height: 150px;
+  }
+}
+.img {
+  width: 100%;
+  height: 448px;
+  object-fit: cover;
+  cursor: grab;
+}
+@media screen and (max-width: 1360px) {
+  .img {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .img {
+    height: 150px;
+  }
+}
+.img:active {
+  cursor: grabbing;
 }
 
-.label{
-    position: absolute;
-    top: 94px;
-    width: 751px;
-    height: 260px;
-    padding-left: 90px;
-    padding-right: 30px;
-    padding-top: 65px;
-    padding-bottom: 65px;
-    color: var(--color-text-white);
-    background-color: var(--color-bg-label);
-    font-weight: 500;
-    font-size: 38px;
-    line-height: 64px;
-    pointer-events: none;
+.label {
+  position: absolute;
+  top: 94px;
+  width: 751px;
+  height: 260px;
+  padding-left: 90px;
+  padding-right: 30px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  color: var(--color-text-white);
+  background-color: var(--color-bg-label);
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 64px;
+  pointer-events: none;
+}
+@media screen and (max-width: 1360px) {
+  .label {
+    top: 70px;
+    width: 550px;
+    height: 150px;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 24px;
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .label {
+    top: 35px;
+    width: 260px;
+    height: 75px;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    line-height: 24px;
+  }
 }
 .label::after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    width: 621px;
-    height: 2px;
-    background-color: var(--color-decor);
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 621px;
+  height: 2px;
+  background-color: var(--color-decor);
+}
+@media screen and (max-width: 1360px) {
+  .label::after {
+    width: 535px;
+    top: 60%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .label::after {
+    width: 250px;
+    top: 60%;
+  }
 }
