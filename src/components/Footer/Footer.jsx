@@ -56,7 +56,7 @@ function Footer(props) {
         </ul>
       </div>
       <div>
-        <h3 className={style.title}>Контактная информация</h3>;
+        <h3 className={style.title}>Контактная информация</h3>
         <address className={style.address}>
           <p className={style.itemAddress}>
             Заводская улица, 2В, Буча,Киевская область, 08292"
