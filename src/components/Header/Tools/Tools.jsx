@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ButtonFlag from './ButtonFlag/ButtonFlag';
-import { useTranslation } from 'react-i18next';
 //* icons
 import iconSearch from 'img/Vectorsearch.svg';
 import iconArrow from 'img/down arrow.svg';
@@ -20,9 +19,6 @@ function Tools() {
   ]);
   const [value, setValue] = useState('');
 
-  const { t, i18n } = useTranslation();
-  const handleLang = lang => i18n.changeLanguage(lang.toLowerCase());
-
   const toggleShowFieldSearch = () => setIsShowFieldSearch(!isShowFieldSearch);
   const onChangeSearch = e => {
     e.preventDefault();
@@ -41,7 +37,6 @@ function Tools() {
 
   const onChangeVisibleFlag = (icon, title) => {
     setVisibleFlag([icon, title]);
-    handleLang(title);
     toggleShowFlags();
   };
 

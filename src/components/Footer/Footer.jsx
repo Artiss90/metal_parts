@@ -1,5 +1,3 @@
-import { useTranslation } from 'react-i18next';
-
 // * icons
 import google from 'img/google.svg';
 import instagram from 'img/instagram.svg';
@@ -9,15 +7,13 @@ import facebook from 'img/facebook.svg';
 import style from './Footer.module.css';
 
 function Footer(props) {
-  const { t, i18n } = useTranslation();
-  console.log(t('our works'));
   return (
     <footer className={style.container} id="Footer">
       <div>
         <h3 className={style.title}>О компании</h3>
         <ul className={style.list}>
           <li className={style.item}>
-            <a href="/">{t('our works')}</a>
+            <a href="/">Наши работы</a>
           </li>
           <li className={style.item}>
             <a href="/">Контакты</a>
