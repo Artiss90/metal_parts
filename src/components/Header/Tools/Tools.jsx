@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import ButtonFlag from './ButtonFlag/ButtonFlag';
+import { Context } from 'components/Wrapper/Wrapper';
 //* icons
 import iconSearch from 'img/Vectorsearch.svg';
 import iconArrow from 'img/down arrow.svg';
@@ -11,11 +12,12 @@ import sn from 'classnames';
 import style from './Tools.module.css';
 
 function Tools() {
+  const context = useContext(Context);
   const [isShowFieldSearch, setIsShowFieldSearch] = useState(false);
   const [isShowListFlags, setIsShowListFlags] = useState(false);
   const [[visibleFlagIcon, visibleFlagTitle], setVisibleFlag] = useState([
     iconRU,
-    'RU',
+    'ru-RU',
   ]);
   const [value, setValue] = useState('');
 
@@ -37,6 +39,7 @@ function Tools() {
 
   const onChangeVisibleFlag = (icon, title) => {
     setVisibleFlag([icon, title]);
+    context.selectLanguage(title);
     toggleShowFlags();
   };
 
@@ -89,21 +92,21 @@ function Tools() {
             <ButtonFlag
               srcFlag={iconRU}
               title="RU"
-              onClick={() => onChangeVisibleFlag(iconRU, 'RU')}
+              onClick={() => onChangeVisibleFlag(iconRU, 'ru-RU')}
             />
           </li>
           <li className={style.itemFlag}>
             <ButtonFlag
               srcFlag={iconUA}
               title="UA"
-              onClick={() => onChangeVisibleFlag(iconUA, 'UA')}
+              onClick={() => onChangeVisibleFlag(iconUA, 'uk-UA')}
             />
           </li>
           <li className={style.itemFlag}>
             <ButtonFlag
               srcFlag={iconEN}
               title="EN"
-              onClick={() => onChangeVisibleFlag(iconEN, 'EN')}
+              onClick={() => onChangeVisibleFlag(iconEN, 'en')}
             />
           </li>
         </ul>
