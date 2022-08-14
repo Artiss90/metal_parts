@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import ButtonFlag from './ButtonFlag/ButtonFlag';
 import { Context } from 'components/Wrapper/Wrapper';
+import { FormattedMessage } from 'react-intl';
 //* icons
 import iconSearch from 'img/Vectorsearch.svg';
 import iconArrow from 'img/down arrow.svg';
@@ -13,6 +14,7 @@ import style from './Tools.module.css';
 
 function Tools() {
   const context = useContext(Context);
+
   const [isShowFieldSearch, setIsShowFieldSearch] = useState(false);
   const [isShowListFlags, setIsShowListFlags] = useState(false);
   const [[visibleFlagIcon, visibleFlagTitle], setVisibleFlag] = useState([
@@ -57,13 +59,18 @@ function Tools() {
         <div
           className={sn(style.fieldSearch, { [style.show]: isShowFieldSearch })}
         >
-          <input
-            type="text"
-            className={style.inputSearch}
-            placeholder="Поиск"
-            value={value}
-            onChange={onChangeSearch}
-          />
+          <FormattedMessage id="search" defaultMessage="search">
+            {message => (
+              <input
+                type="text"
+                className={style.inputSearch}
+                placeholder={message}
+                value={value}
+                onChange={onChangeSearch}
+              />
+            )}
+          </FormattedMessage>
+
           <button
             type="button"
             className={sn(style.btnSearch, style.inField)}
