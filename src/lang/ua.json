@@ -6,5 +6,10 @@
   "header.nav.aboutUs": "Про нас",
   "header.nav.contacts": "Контакти",
   "header.slider.banner1": "Високоточне виготовлення виробів із металу за кресленнями",
-  "header.slider.banner2": "Сучасний підхід виготовлення деталей високої якості"
+  "header.slider.banner2": "Сучасний підхід виготовлення деталей високої якості",
+  "header.services.calc": "Розрахунок ціни за кресленням",
+  "header.services.equipmentManufacturing": "Виробництво обладнання",
+  "header.services.metalFurniture": "Металеві меблі",
+  "header.services.metalStructures": "Металоконструкції",
+  "header.services.metalworking": "Металообробка"
 }

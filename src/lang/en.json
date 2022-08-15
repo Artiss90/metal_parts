@@ -6,5 +6,10 @@
   "header.nav.aboutUs": "About Us",
   "header.nav.contacts": "Contacts",
   "header.slider.banner1": "High-precision production of metal products according to drawings",
-  "header.slider.banner2": "Modern approach to manufacturing high quality parts"
+  "header.slider.banner2": "Modern approach to manufacturing high quality parts",
+  "header.services.calc": "Price calculation by drawing",
+  "header.services.equipmentManufacturing": "Equipment manufacturing",
+  "header.services.metalFurniture": "Metal furniture",
+  "header.services.metalStructures": "Metal structures",
+  "header.services.metalworking": "Metalworking"
 }

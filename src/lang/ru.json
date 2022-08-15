@@ -6,5 +6,10 @@
   "header.nav.aboutUs": "О нас",
   "header.nav.contacts": "Контакты",
   "header.slider.banner1": "Высокоточное изготовление изделий из металла по чертежам",
-  "header.slider.banner2": "Современный подход  изготовления деталей высокого качества"
+  "header.slider.banner2": "Современный подход  изготовления деталей высокого качества",
+  "header.services.calc": "Быстрый расчет цены по чертежу",
+  "header.services.equipmentManufacturing": "Производство оборудования",
+  "header.services.metalFurniture": "Металлическая мебель",
+  "header.services.metalStructures": "Металлоконструкции",
+  "header.services.metalworking": "Металлообработка"
 }
