@@ -11,5 +11,9 @@
   "header.services.equipmentManufacturing": "Equipment manufacturing",
   "header.services.metalFurniture": "Metal furniture",
   "header.services.metalStructures": "Metal structures",
-  "header.services.metalworking": "Metalworking"
+  "header.services.metalworking": "Metalworking",
+  "header.services.cuttingMetal": "Cutting metal",
+  "header.services.designDepartment": "Design department",
+  "header.services.equipmentRental": "Equipment rental",
+  "header.services.equipmentRepair": "Equipment repair"
 }

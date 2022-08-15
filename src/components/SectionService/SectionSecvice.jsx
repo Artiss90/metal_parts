@@ -19,12 +19,12 @@ const imgGroupFirst = [
   [img2, 'Металлическая мебель', 'header.services.metalFurniture'],
   [img3, 'Металлоконструкции', 'header.services.metalStructures'],
   [img4, 'Металлообработка', 'header.services.metalworking'],
-  [img5, 'Раскрой металла'],
-  [img6, 'Конструкторское бюро'],
+  [img5, 'Раскрой металла', 'header.services.cuttingMetal'],
+  [img6, 'Конструкторское бюро', 'header.services.designDepartment'],
 ];
 const imgGroupSecond = [
-  [img7, 'Аренда техники'],
-  [img8, 'Ремонт техники'],
+  [img7, 'Аренда техники', 'header.services.equipmentRental'],
+  [img8, 'Ремонт техники', 'header.services.equipmentRepair'],
 ];
 
 function SectionService({ isWidthForDesktop }) {

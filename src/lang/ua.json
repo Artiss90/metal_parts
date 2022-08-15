@@ -11,5 +11,9 @@
   "header.services.equipmentManufacturing": "Виробництво обладнання",
   "header.services.metalFurniture": "Металеві меблі",
   "header.services.metalStructures": "Металоконструкції",
-  "header.services.metalworking": "Металообробка"
+  "header.services.metalworking": "Металообробка",
+  "header.services.cuttingMetal": "Розкрій металу",
+  "header.services.designDepartment": "Конструкторське бюро",
+  "header.services.equipmentRental": "Оренда техніки",
+  "header.services.equipmentRepair": "Ремонт техніки"
 }
