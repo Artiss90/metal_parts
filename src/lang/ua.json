@@ -15,5 +15,8 @@
   "header.services.cuttingMetal": "Розкрій металу",
   "header.services.designDepartment": "Конструкторське бюро",
   "header.services.equipmentRental": "Оренда техніки",
-  "header.services.equipmentRepair": "Ремонт техніки"
+  "header.services.equipmentRepair": "Ремонт техніки",
+  "header.ourCompany": "Наша компанія",
+  "header.ourCompany.whyUs": "Чому ми?",
+  "header.ourCompany.whyUs_description": "Люди – професіонали із великим досвідом роботи. Повний спектр робіт із металообробки в одному місці – комплексний індивідуальний підхід. Конструкторський відділ. Логістика. Багаторічний досвід машинобудування – створення промислового"
 }

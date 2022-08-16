@@ -15,5 +15,8 @@
   "header.services.cuttingMetal": "Раскрой металла",
   "header.services.designDepartment": "Конструкторское бюро",
   "header.services.equipmentRental": "Аренда техники",
-  "header.services.equipmentRepair": "Ремонт техники"
+  "header.services.equipmentRepair": "Ремонт техники",
+  "header.ourCompany": "Наша компания",
+  "header.ourCompany.whyUs": "Почему мы?",
+  "header.ourCompany.whyUs_description": "Люди – профессионалы с большим опытом работы. Полный спектр работ по металлообработке в одном месте – комплексный индивидуальный подход. Конструкторский отдел. Логистика. Многолетний опыт машиностроения – создание промышленного"
 }
