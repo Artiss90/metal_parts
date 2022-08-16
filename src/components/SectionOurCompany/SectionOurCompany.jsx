@@ -25,8 +25,7 @@ function SectionOurCompany() {
   ];
   return (
     <section className={style.container} id="OurCompany">
-      {/* //! replace inlineStyle*/}
-      <TitleBySection inlineStyle={{ marginBottom: '30px' }}>
+      <TitleBySection modify={true}>
         <FormattedMessage
           id="header.ourCompany"
           defaultMessage="Наша компания"
