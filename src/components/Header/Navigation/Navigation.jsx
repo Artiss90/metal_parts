@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 import sn from 'classnames';
 import style from './Navigation.module.css';
@@ -28,27 +29,36 @@ function Navigation(props) {
             })}
             data-selected={true}
           >
-            Главная
+            <FormattedMessage id="header.nav.main" defaultMessage="Главная" />
           </a>
         </li>
         <li className={style.itemNav}>
           <a href="#Service" className={style.linkNav} data-selected={false}>
-            Услуги
+            <FormattedMessage
+              id="header.nav.services"
+              defaultMessage="Услуги"
+            />
           </a>
         </li>
         <li className={style.itemNav}>
           <a href="#3" className={style.linkNav} data-selected={false}>
-            Наши работы
+            <FormattedMessage
+              id="header.nav.ourWork"
+              defaultMessage="Наши работы"
+            />
           </a>
         </li>
         <li className={style.itemNav}>
           <a href="#OurCompany" className={style.linkNav} data-selected={false}>
-            О нас
+            <FormattedMessage id="header.nav.aboutUs" defaultMessage="О нас" />
           </a>
         </li>
         <li className={style.itemNav}>
           <a href="#Footer" className={style.linkNav} data-selected={false}>
-            Контакты
+            <FormattedMessage
+              id="header.nav.contacts"
+              defaultMessage="Контакты"
+            />
           </a>
         </li>
       </ul>

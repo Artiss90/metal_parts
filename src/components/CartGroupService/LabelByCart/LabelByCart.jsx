@@ -1,8 +1,17 @@
 import React from 'react';
 import sn from 'classnames';
 import style from './LabelByCart.module.css';
+import { FormattedMessage } from 'react-intl';
 
-function LabelByCart({ title, description, isLargeLabel, isReverse }) {
+// 'idFromLang '- This value must always be a non-empty string and only string
+function LabelByCart({
+  title,
+  titleId = 'idFromLang',
+  description,
+  descriptionId = 'idFromLang',
+  isLargeLabel,
+  isReverse,
+}) {
   return (
     <div
       className={sn(
@@ -19,7 +28,7 @@ function LabelByCart({ title, description, isLargeLabel, isReverse }) {
             { [style.isReverse]: isReverse },
           )}
         >
-          {title}
+          {title && <FormattedMessage id={titleId} defaultMessage={title} />}
         </p>
       )}
       {description && (
@@ -30,7 +39,9 @@ function LabelByCart({ title, description, isLargeLabel, isReverse }) {
             { [style.isReverse]: isReverse },
           )}
         >
-          {description}
+          {description && (
+            <FormattedMessage id={descriptionId} defaultMessage={description} />
+          )}
         </p>
       )}
     </div>

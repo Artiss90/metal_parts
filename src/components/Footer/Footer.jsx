@@ -5,63 +5,138 @@ import youtube from 'img/youtube.svg';
 import facebook from 'img/facebook.svg';
 
 import style from './Footer.module.css';
+import { FormattedMessage } from 'react-intl';
 
 function Footer(props) {
   return (
     <footer className={style.container} id="Footer">
       <div>
-        <h3 className={style.title}>О компании</h3>
+        <h3 className={style.title}>
+          <FormattedMessage id="footer.company" defaultMessage="О компании" />
+        </h3>
         <ul className={style.list}>
           <li className={style.item}>
-            <a href="/">Наши работы</a>
+            <a href="/">
+              <FormattedMessage
+                id="header.nav.ourWork"
+                defaultMessage="Наши работы"
+              />
+            </a>
           </li>
           <li className={style.item}>
-            <a href="/">Контакты</a>
+            <a href="/">
+              <FormattedMessage
+                id="header.nav.contacts"
+                defaultMessage="Контакты"
+              />
+            </a>
           </li>
           <li className={style.item}>
-            <a href="/">Доставка</a>
+            <a href="/">
+              <FormattedMessage
+                id="footer.delivery"
+                defaultMessage="Доставка"
+              />
+            </a>
           </li>
           <li className={style.item}>
-            <a href="/">Форма заказа</a>
+            <a href="/">
+              <FormattedMessage
+                id="footer.orderForm"
+                defaultMessage="Форма заказа"
+              />
+            </a>
           </li>
         </ul>
       </div>
       <div>
-        <h3 className={style.title}>Услуги</h3>
+        <h3 className={style.title}>
+          <FormattedMessage id="header.nav.services" defaultMessage="Услуги" />
+        </h3>
         <ul className={style.list}>
           <li className={style.item}>
-            <a href="#Service">Производство оборудования</a>
+            <a href="#Service">
+              <FormattedMessage
+                id="services.equipmentManufacturing"
+                defaultMessage="Производство оборудования"
+              />
+            </a>
           </li>
           <li className={style.item}>
-            <a href="#Service">Раскрой металла</a>
+            <a href="#Service">
+              <FormattedMessage
+                id="services.cuttingMetal"
+                defaultMessage="Раскрой металла"
+              />
+            </a>
           </li>
           <li className={style.item}>
-            <a href="#Service">Металлическая мебель</a>
+            <a href="#Service">
+              <FormattedMessage
+                id="services.metalFurniture"
+                defaultMessage="Металлическая мебель"
+              />
+            </a>
           </li>
           <li className={style.item}>
-            <a href="#Service">Конструкторское бюро</a>
+            <a href="#Service">
+              <FormattedMessage
+                id="services.designDepartment"
+                defaultMessage="Конструкторское бюро"
+              />
+            </a>
           </li>
           <li className={style.item}>
-            <a href="#Service">Металлоконструкции</a>
+            <a href="#Service">
+              <FormattedMessage
+                id="services.metalStructures"
+                defaultMessage="Металлоконструкции"
+              />
+            </a>
           </li>
           <li className={style.item}>
-            <a href="#Service">Аренда техники</a>
+            <a href="#Service">
+              <FormattedMessage
+                id="services.equipmentRental"
+                defaultMessage="Аренда техники"
+              />
+            </a>
           </li>
           <li className={style.item}>
-            <a href="#Service">Металлообработка</a>
+            <a href="#Service">
+              <FormattedMessage
+                id="services.metalworking"
+                defaultMessage="Металлообработка"
+              />
+            </a>
           </li>
           <li className={style.item}>
-            <a href="#Service">Ремонт техники</a>
+            <a href="#Service">
+              <FormattedMessage
+                id="services.equipmentRepair"
+                defaultMessage="Ремонт техники"
+              />
+            </a>
           </li>
         </ul>
       </div>
       <div>
-        <h3 className={style.title}>Контактная информация</h3>
+        <h3 className={style.title}>
+          <FormattedMessage
+            id="footer.contactInformation"
+            defaultMessage="Контактная информация"
+          />
+        </h3>
         <address className={style.address}>
           <p className={style.itemAddress}>
             Заводская улица, 2В, Буча,Киевская область, 08292"
           </p>
-          <p className={style.itemAddress}>ПН - ПТ: 09:00 - 18:00</p>
+          <p className={style.itemAddress}>
+            <FormattedMessage
+              id="footer.businessHours"
+              defaultMessage="ПН - ПТ: 09:00 - 18:00"
+            />
+          </p>
           <a className={style.itemAddress} href="tel:+38(097)123-45-67">
             +38(097)123-45-67
           </a>
