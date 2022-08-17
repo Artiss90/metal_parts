@@ -1,14 +1,15 @@
 import React from 'react';
 import Slick from 'react-slick';
-import baner1 from 'img/jpg/Banner.jpg';
-import baner2 from 'img/jpg/Rectangle 25company1.jpg';
-import baner3 from 'img/jpg/Rectangle 25company2.jpg';
+import banner1 from 'img/jpg/Banner.jpg';
+import banner2 from 'img/jpg/Rectangle 25company1.jpg';
+import banner3 from 'img/jpg/Rectangle 25company2.jpg';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import './customSlider.css';
 import style from './Slider.module.css';
+import { FormattedMessage } from 'react-intl';
 
 function Slider() {
   const settings = {
@@ -26,27 +27,39 @@ function Slider() {
       <Slick {...settings}>
         <div className={style.containerCart}>
           <p className={style.label}>
-            Высокоточное изготовление изделий из металла по чертежам
+            <FormattedMessage
+              id="slider.banner1"
+              defaultMessage="Высокоточное изготовление изделий из металла по чертежам"
+            />
           </p>
-          <img src={baner1} alt="metal parts" className={style.img} />
+          <img src={banner1} alt="metal parts" className={style.img} />
         </div>
         <div className={style.containerCart}>
           <p className={style.label}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad.
+            <FormattedMessage
+              id="slider.banner2"
+              defaultMessage="Современный подход к изготовлению деталей высокого качества"
+            />
           </p>
-          <img src={baner2} alt="metal parts" className={style.img} />
+          <img src={banner2} alt="metal parts" className={style.img} />
         </div>
         <div className={style.containerCart}>
           <p className={style.label}>
-            Высокоточное изготовление изделий из металла по чертежам
+            <FormattedMessage
+              id="slider.banner1"
+              defaultMessage="Высокоточное изготовление изделий из металла по чертежам"
+            />
           </p>
-          <img src={baner1} alt="metal parts" className={style.img} />
+          <img src={banner1} alt="metal parts" className={style.img} />
         </div>
         <div className={style.containerCart}>
           <p className={style.label}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad.
+            <FormattedMessage
+              id="slider.banner2"
+              defaultMessage="Современный подход к изготовлению деталей высокого качества"
+            />
           </p>
-          <img src={baner3} alt="metal parts" className={style.img} />
+          <img src={banner3} alt="metal parts" className={style.img} />
         </div>
       </Slick>
     </div>

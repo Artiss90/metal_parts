@@ -12,18 +12,19 @@ import img8 from 'img/jpg/Rectangle 24last.jpg';
 import style from './SectionService.module.css';
 import SpinningPart from 'components/SectionService/SpinningPart/SpinningPart';
 import TitleBySection from 'components/common/TitleBySection/TitleBySection';
+import { FormattedMessage } from 'react-intl';
 
 const imgGroupFirst = [
-  [img1, 'Производство оборудования'],
-  [img2, 'Металлическая мебель'],
-  [img3, 'Металлоконструкции'],
-  [img4, 'Металлообработка'],
-  [img5, 'Раскрой металла'],
-  [img6, 'Конструкторское бюро'],
+  [img1, 'Производство оборудования', 'services.equipmentManufacturing'],
+  [img2, 'Металлическая мебель', 'services.metalFurniture'],
+  [img3, 'Металлоконструкции', 'services.metalStructures'],
+  [img4, 'Металлообработка', 'services.metalworking'],
+  [img5, 'Раскрой металла', 'services.cuttingMetal'],
+  [img6, 'Конструкторское бюро', 'services.designDepartment'],
 ];
 const imgGroupSecond = [
-  [img7, 'Аренда техники'],
-  [img8, 'Ремонт техники'],
+  [img7, 'Аренда техники', 'services.equipmentRental'],
+  [img8, 'Ремонт техники', 'services.equipmentRepair'],
 ];
 
 function SectionService({ isWidthForDesktop }) {
@@ -65,11 +66,16 @@ function SectionService({ isWidthForDesktop }) {
         </>
       )}
       <section className={style.containerCartGroupService} id="Service">
-        <TitleBySection>Услуги</TitleBySection>
+        <TitleBySection>
+          <FormattedMessage id="header.nav.services" defaultMessage="Услуги" />
+        </TitleBySection>
         <CartGroupService groupImg={imgGroupFirst} col={3} />
         <CartGroupService groupImg={imgGroupSecond} col={2} />
         <button type="button" className={style.bntCalc}>
-          Быстрый расчет цены по чертежу
+          <FormattedMessage
+            id="services.calc"
+            defaultMessage="Быстрый расчет цены по чертежу"
+          />
         </button>
       </section>
     </div>
