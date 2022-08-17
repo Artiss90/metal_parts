@@ -18,6 +18,7 @@ if (local === 'en') {
     if (local === 'uk-UA') {
       lang = Ukraine;
     } else {
+      // default lang
       lang = English;
     }
   }

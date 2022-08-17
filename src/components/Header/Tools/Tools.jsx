@@ -17,7 +17,7 @@ function Tools() {
   const [isShowFieldSearch, setIsShowFieldSearch] = useState(false);
   const [isShowListFlags, setIsShowListFlags] = useState(false);
   const [[visibleFlagIcon, visibleFlagTitle], setVisibleFlag] = useState(
-    langs[context.locale],
+    langs[context.locale] || langs['en'],
   );
   const [value, setValue] = useState('');
 
