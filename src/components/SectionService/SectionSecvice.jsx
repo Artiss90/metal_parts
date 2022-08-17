@@ -59,9 +59,9 @@ function SectionService({ isWidthForDesktop }) {
       {/* // если ширина экрана меньше десктопной SpinningPart не отбражаем */}
       {isWidthForDesktop && (
         <>
-          <SpinningPart onSpinning={onSpinning} size="normal" />
+          <SpinningPart onSpinning={onSpinning} size="normal" reverse />
           <SpinningPart onSpinning={onSpinning} size="big" />
-          <SpinningPart onSpinning={onSpinning} size="normal" />
+          <SpinningPart onSpinning={onSpinning} size="normal" reverse />
           <SpinningPart onSpinning={onSpinning} size="big" />
         </>
       )}
