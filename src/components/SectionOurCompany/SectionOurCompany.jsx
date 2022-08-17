@@ -11,25 +11,22 @@ function SectionOurCompany() {
     [
       img1,
       'Почему мы?',
-      'header.ourCompany.whyUs',
+      'ourCompany.whyUs',
       'Люди – профессионалы с большим опытом работы. Полный спектр работ по металлообработке в одном месте – комплексный индивидуальный подход. Конструкторский отдел. Логистика. Многолетний опыт машиностроения – создание промышленного',
-      'header.ourCompany.whyUs_description',
+      'ourCompany.whyUs_description',
     ],
     [
       img2,
       'Наши преимущества',
-      'header.ourCompany.ourAdvantages',
+      'ourCompany.ourAdvantages',
       'Люди – профессионалы с большим опытом работы. Полный спектр работ по металлообработке в одном месте – комплексный индивидуальный подход. Конструкторский отдел. Логистика. Многолетний опыт машиностроения – создание промышленного',
-      'header.ourCompany.ourAdvantages_description',
+      'ourCompany.ourAdvantages_description',
     ],
   ];
   return (
     <section className={style.container} id="OurCompany">
       <TitleBySection modify={true}>
-        <FormattedMessage
-          id="header.ourCompany"
-          defaultMessage="Наша компания"
-        />
+        <FormattedMessage id="ourCompany" defaultMessage="Наша компания" />
       </TitleBySection>
       <CartGroupService groupImg={imgGroup} col={1} />
     </section>

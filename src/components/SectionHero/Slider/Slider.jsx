@@ -28,7 +28,7 @@ function Slider() {
         <div className={style.containerCart}>
           <p className={style.label}>
             <FormattedMessage
-              id="header.slider.banner1"
+              id="slider.banner1"
               defaultMessage="Высокоточное изготовление изделий из металла по чертежам"
             />
           </p>
@@ -37,7 +37,7 @@ function Slider() {
         <div className={style.containerCart}>
           <p className={style.label}>
             <FormattedMessage
-              id="header.slider.banner2"
+              id="slider.banner2"
               defaultMessage="Современный подход к изготовлению деталей высокого качества"
             />
           </p>
@@ -46,7 +46,7 @@ function Slider() {
         <div className={style.containerCart}>
           <p className={style.label}>
             <FormattedMessage
-              id="header.slider.banner1"
+              id="slider.banner1"
               defaultMessage="Высокоточное изготовление изделий из металла по чертежам"
             />
           </p>
@@ -55,7 +55,7 @@ function Slider() {
         <div className={style.containerCart}>
           <p className={style.label}>
             <FormattedMessage
-              id="header.slider.banner2"
+              id="slider.banner2"
               defaultMessage="Современный подход к изготовлению деталей высокого качества"
             />
           </p>

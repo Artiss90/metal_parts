@@ -15,16 +15,16 @@ import TitleBySection from 'components/common/TitleBySection/TitleBySection';
 import { FormattedMessage } from 'react-intl';
 
 const imgGroupFirst = [
-  [img1, 'Производство оборудования', 'header.services.equipmentManufacturing'],
-  [img2, 'Металлическая мебель', 'header.services.metalFurniture'],
-  [img3, 'Металлоконструкции', 'header.services.metalStructures'],
-  [img4, 'Металлообработка', 'header.services.metalworking'],
-  [img5, 'Раскрой металла', 'header.services.cuttingMetal'],
-  [img6, 'Конструкторское бюро', 'header.services.designDepartment'],
+  [img1, 'Производство оборудования', 'services.equipmentManufacturing'],
+  [img2, 'Металлическая мебель', 'services.metalFurniture'],
+  [img3, 'Металлоконструкции', 'services.metalStructures'],
+  [img4, 'Металлообработка', 'services.metalworking'],
+  [img5, 'Раскрой металла', 'services.cuttingMetal'],
+  [img6, 'Конструкторское бюро', 'services.designDepartment'],
 ];
 const imgGroupSecond = [
-  [img7, 'Аренда техники', 'header.services.equipmentRental'],
-  [img8, 'Ремонт техники', 'header.services.equipmentRepair'],
+  [img7, 'Аренда техники', 'services.equipmentRental'],
+  [img8, 'Ремонт техники', 'services.equipmentRepair'],
 ];
 
 function SectionService({ isWidthForDesktop }) {
@@ -67,13 +67,13 @@ function SectionService({ isWidthForDesktop }) {
       )}
       <section className={style.containerCartGroupService} id="Service">
         <TitleBySection>
-          <FormattedMessage id="header.nav.services" defaultMessage="Услуги" />
+          <FormattedMessage id="nav.services" defaultMessage="Услуги" />
         </TitleBySection>
         <CartGroupService groupImg={imgGroupFirst} col={3} />
         <CartGroupService groupImg={imgGroupSecond} col={2} />
         <button type="button" className={style.bntCalc}>
           <FormattedMessage
-            id="header.services.calc"
+            id="services.calc"
             defaultMessage="Быстрый расчет цены по чертежу"
           />
         </button>
