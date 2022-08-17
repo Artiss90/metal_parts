@@ -67,7 +67,7 @@ function SectionService({ isWidthForDesktop }) {
       )}
       <section className={style.containerCartGroupService} id="Service">
         <TitleBySection>
-          <FormattedMessage id="nav.services" defaultMessage="Услуги" />
+          <FormattedMessage id="header.nav.services" defaultMessage="Услуги" />
         </TitleBySection>
         <CartGroupService groupImg={imgGroupFirst} col={3} />
         <CartGroupService groupImg={imgGroupSecond} col={2} />
