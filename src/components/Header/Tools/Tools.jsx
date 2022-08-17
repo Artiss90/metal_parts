@@ -2,12 +2,11 @@ import React, { useContext, useState } from 'react';
 import ButtonFlag from './ButtonFlag/ButtonFlag';
 import { Context } from 'components/Wrapper/Wrapper';
 import { FormattedMessage } from 'react-intl';
+import langs from 'components/common/langs/langs';
 //* icons
 import iconSearch from 'img/Vectorsearch.svg';
 import iconArrow from 'img/down arrow.svg';
-import iconUA from 'img/Flag_of_Ukraine 1ua.svg';
-import iconRU from 'img/Flag_of_Russia 1.svg';
-import iconEN from 'img/Flag_of_the_United_Kingdom.svg';
+
 //* style
 import sn from 'classnames';
 import style from './Tools.module.css';
@@ -17,10 +16,9 @@ function Tools() {
 
   const [isShowFieldSearch, setIsShowFieldSearch] = useState(false);
   const [isShowListFlags, setIsShowListFlags] = useState(false);
-  const [[visibleFlagIcon, visibleFlagTitle], setVisibleFlag] = useState([
-    iconRU,
-    'ru-RU',
-  ]);
+  const [[visibleFlagIcon, visibleFlagTitle], setVisibleFlag] = useState(
+    langs[context.locale],
+  );
   const [value, setValue] = useState('');
 
   const toggleShowFieldSearch = () => setIsShowFieldSearch(!isShowFieldSearch);
@@ -39,7 +37,7 @@ function Tools() {
 
   const toggleShowFlags = () => setIsShowListFlags(!isShowListFlags);
 
-  const onChangeVisibleFlag = (icon, title) => {
+  const onChangeVisibleFlag = ([icon, title]) => {
     setVisibleFlag([icon, title]);
     context.selectLanguage(title);
     toggleShowFlags();
@@ -97,23 +95,23 @@ function Tools() {
         <ul className={sn(style.listFlag, { [style.show]: isShowListFlags })}>
           <li className={style.itemFlag}>
             <ButtonFlag
-              srcFlag={iconRU}
+              srcFlag={langs['ru-RU'][0]}
               title="RU"
-              onClick={() => onChangeVisibleFlag(iconRU, 'ru-RU')}
+              onClick={() => onChangeVisibleFlag(langs['ru-RU'])}
             />
           </li>
           <li className={style.itemFlag}>
             <ButtonFlag
-              srcFlag={iconUA}
+              srcFlag={langs['uk-UA'][0]}
               title="UA"
-              onClick={() => onChangeVisibleFlag(iconUA, 'uk-UA')}
+              onClick={() => onChangeVisibleFlag(langs['uk-UA'])}
             />
           </li>
           <li className={style.itemFlag}>
             <ButtonFlag
-              srcFlag={iconEN}
+              srcFlag={langs['en'][0]}
               title="EN"
-              onClick={() => onChangeVisibleFlag(iconEN, 'en')}
+              onClick={() => onChangeVisibleFlag(langs['en'])}
             />
           </li>
         </ul>

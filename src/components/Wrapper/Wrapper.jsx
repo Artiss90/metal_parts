@@ -6,8 +6,8 @@ import English from 'lang/en.json';
 
 export const Context = React.createContext();
 
-const local = navigator.language;
-
+const langLocalStorage = localStorage.getItem('lang');
+const local = langLocalStorage || navigator.language;
 let lang;
 if (local === 'en') {
   lang = English;
@@ -18,7 +18,7 @@ if (local === 'en') {
     if (local === 'uk-UA') {
       lang = Ukraine;
     } else {
-      lang = Russian;
+      lang = English;
     }
   }
 }
@@ -29,6 +29,8 @@ const Wrapper = props => {
 
   function selectLanguage(currentLang) {
     setLocale(currentLang);
+    localStorage.setItem('lang', currentLang);
+
     if (currentLang === 'en') {
       setMessages(English);
     } else {
@@ -38,7 +40,7 @@ const Wrapper = props => {
         if (currentLang === 'uk-UA') {
           setMessages(Ukraine);
         } else {
-          setMessages(Russian);
+          setMessages(English);
         }
       }
     }

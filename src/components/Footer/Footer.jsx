@@ -129,7 +129,7 @@ function Footer(props) {
         </h3>
         <address className={style.address}>
           <p className={style.itemAddress}>
-            Заводская улица, 2В, Буча,Киевская область, 08292"
+            вулиця Заводська, 2В, Буча, Київська область, 08292
           </p>
           <p className={style.itemAddress}>
             <FormattedMessage
