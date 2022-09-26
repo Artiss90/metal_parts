@@ -4,11 +4,18 @@ import Russian from 'lang/ru.json';
 import Ukraine from 'lang/ua.json';
 import English from 'lang/en.json';
 
-export const Context = React.createContext();
+interface ILangs {
+  [keyText:string]: string,
+}
+interface IProps {
+  children: JSX.Element[] | JSX.Element;
+}
+
+
 
 const langLocalStorage = localStorage.getItem('lang');
 const local = langLocalStorage || navigator.language;
-let lang;
+let lang:ILangs;
 if (local === 'en') {
   lang = English;
 } else {
@@ -24,11 +31,18 @@ if (local === 'en') {
   }
 }
 
-const Wrapper = props => {
+interface IContextType {
+  locale: string,
+  selectLanguage: (local:string)=>void
+}
+
+export const Context = React.createContext<IContextType | undefined>(undefined);
+
+const Wrapper = ({children}:IProps) => {
   const [locale, setLocale] = useState(local);
   const [messages, setMessages] = useState(lang);
 
-  function selectLanguage(currentLang) {
+  function selectLanguage(currentLang:string) {
     setLocale(currentLang);
     localStorage.setItem('lang', currentLang);
 
@@ -50,7 +64,7 @@ const Wrapper = props => {
   return (
     <Context.Provider value={{ locale, selectLanguage }}>
       <IntlProvider messages={messages} locale={locale}>
-        {props.children}
+        {children}
       </IntlProvider>
     </Context.Provider>
   );
