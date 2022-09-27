@@ -3,7 +3,12 @@ import img1 from 'img/jpg/Rectangle 17.jpg';
 
 import style from './Cart.module.css';
 
-function Cart({ imgSrc = img1, children }) {
+interface IProps {
+  imgSrc?: string,
+  children: JSX.Element[] | JSX.Element
+}
+
+function Cart({ imgSrc = img1, children }:IProps) {
   return (
     <div className={style.container}>
       {children}

@@ -14,7 +14,9 @@ import SpinningPart from 'components/SectionService/SpinningPart/SpinningPart';
 import TitleBySection from 'components/common/TitleBySection/TitleBySection';
 import { FormattedMessage } from 'react-intl';
 
-const imgGroupFirst = [
+export type TImgGroup = [img:string, title:string, titleId:string, description?:string, descriptionId?:string][] 
+
+const imgGroupFirst:TImgGroup = [
   [img1, 'Производство оборудования', 'services.equipmentManufacturing'],
   [img2, 'Металлическая мебель', 'services.metalFurniture'],
   [img3, 'Металлоконструкции', 'services.metalStructures'],
@@ -22,12 +24,16 @@ const imgGroupFirst = [
   [img5, 'Раскрой металла', 'services.cuttingMetal'],
   [img6, 'Конструкторское бюро', 'services.designDepartment'],
 ];
-const imgGroupSecond = [
+const imgGroupSecond:TImgGroup = [
   [img7, 'Аренда техники', 'services.equipmentRental'],
   [img8, 'Ремонт техники', 'services.equipmentRepair'],
 ];
 
-function SectionService({ isWidthForDesktop }) {
+interface IProps {
+  isWidthForDesktop: boolean
+}
+
+function SectionService({ isWidthForDesktop }:IProps) {
   const [onSpinning, setOnSpinning] = useState(false);
 
   const memoizedCallbackOnSpin = useCallback(() => {
@@ -39,8 +45,8 @@ function SectionService({ isWidthForDesktop }) {
       }, 2000);
     };
 
-    onSpin(onSpinning);
-  }, [onSpinning]);
+    onSpin();
+  }, []);
 
   useEffect(() => {
     if (!isWidthForDesktop) {

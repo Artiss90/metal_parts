@@ -1,3 +1,4 @@
+import React from 'react';
 // * icons
 import google from 'img/google.svg';
 import instagram from 'img/instagram.svg';
@@ -7,7 +8,7 @@ import facebook from 'img/facebook.svg';
 import style from './Footer.module.css';
 import { FormattedMessage } from 'react-intl';
 
-function Footer(props) {
+function Footer() {
   return (
     <footer className={style.container} id="Footer">
       <div>

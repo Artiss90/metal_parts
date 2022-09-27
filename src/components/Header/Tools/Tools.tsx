@@ -11,22 +11,33 @@ import iconArrow from 'img/down arrow.svg';
 import sn from 'classnames';
 import style from './Tools.module.css';
 
+type TLangs = 'en'|'ru-RU'|'uk-UA'
+
 function Tools() {
   const context = useContext(Context);
+  const langContext = context?.locale;
+  let concreteLang: TLangs = 'en'
+  if (langContext === 'ru-RU') {
+    concreteLang = langContext
+  } else {
+    if (langContext === 'uk-UA') {
+      concreteLang = langContext
+    } else {
+      concreteLang = 'en'
+    }
+  }
 
   const [isShowFieldSearch, setIsShowFieldSearch] = useState(false);
   const [isShowListFlags, setIsShowListFlags] = useState(false);
-  const [[visibleFlagIcon, visibleFlagTitle], setVisibleFlag] = useState(
-    langs[context.locale] || langs['en'],
-  );
+  const [[visibleFlagIcon, visibleFlagTitle], setVisibleFlag] = useState(langs[concreteLang]);
   const [value, setValue] = useState('');
 
   const toggleShowFieldSearch = () => setIsShowFieldSearch(!isShowFieldSearch);
-  const onChangeSearch = e => {
+  const onChangeSearch: React.ChangeEventHandler<HTMLInputElement> = e => {
     e.preventDefault();
     setValue(e.target.value);
   };
-  const onSearch = target => {
+  const onSearch: (target: string) => void = target => {
     // ? there will be logic search
     //************ */
     // *clear value by input
@@ -37,9 +48,11 @@ function Tools() {
 
   const toggleShowFlags = () => setIsShowListFlags(!isShowListFlags);
 
-  const onChangeVisibleFlag = ([icon, title]) => {
+  const onChangeVisibleFlag: ([icon, title]: [string, string]) => void = ([icon, title]) => {
     setVisibleFlag([icon, title]);
-    context.selectLanguage(title);
+    if (context) {
+      context.selectLanguage(title);
+    }
     toggleShowFlags();
   };
 
@@ -62,7 +75,7 @@ function Tools() {
               <input
                 type="text"
                 className={style.inputSearch}
-                placeholder={message}
+                placeholder={message.toString()}
                 value={value}
                 onChange={onChangeSearch}
               />
