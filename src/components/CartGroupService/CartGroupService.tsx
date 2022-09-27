@@ -4,8 +4,14 @@ import sn from 'classnames';
 
 import style from './CartGroupService.module.css';
 import LabelByCart from 'components/CartGroupService/LabelByCart/LabelByCart';
+import { TImgGroup } from 'components/SectionService/SectionService';
 
-function CartGroupService({ groupImg = [], col = 3 }) {
+interface IProps{
+  groupImg?: TImgGroup,
+  col?: number
+}
+
+function CartGroupService({ groupImg = [], col = 3 }:IProps) {
   return (
     <ul className={style.list}>
       {groupImg.map(

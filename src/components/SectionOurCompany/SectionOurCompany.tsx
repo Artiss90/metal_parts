@@ -1,5 +1,6 @@
 import CartGroupService from 'components/CartGroupService/CartGroupService';
 import TitleBySection from 'components/common/TitleBySection/TitleBySection';
+import { TImgGroup } from 'components/SectionService/SectionService';
 import img1 from 'img/jpg/Rectangle 25company1.jpg';
 import img2 from 'img/jpg/Rectangle 25company2.jpg';
 import { FormattedMessage } from 'react-intl';
@@ -7,7 +8,7 @@ import { FormattedMessage } from 'react-intl';
 import style from './SectionOurCompany.module.css';
 
 function SectionOurCompany() {
-  const imgGroup = [
+  const imgGroup:TImgGroup = [
     [
       img1,
       'Почему мы?',

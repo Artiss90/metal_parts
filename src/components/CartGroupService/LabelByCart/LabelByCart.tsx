@@ -3,6 +3,14 @@ import sn from 'classnames';
 import style from './LabelByCart.module.css';
 import { FormattedMessage } from 'react-intl';
 
+interface IProps{
+  title: string,
+  titleId?: string,
+  description?: string,
+  descriptionId?: string,
+  isLargeLabel?: boolean,
+  isReverse?: boolean,
+}
 // 'idFromLang '- This value must always be a non-empty string and only string
 function LabelByCart({
   title,
@@ -11,7 +19,7 @@ function LabelByCart({
   descriptionId = 'idFromLang',
   isLargeLabel,
   isReverse,
-}) {
+}:IProps) {
   return (
     <div
       className={sn(
