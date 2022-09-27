@@ -27,7 +27,11 @@ const imgGroupSecond = [
   [img8, 'Ремонт техники', 'services.equipmentRepair'],
 ];
 
-function SectionService({ isWidthForDesktop }) {
+interface IProps {
+  isWidthForDesktop: boolean
+}
+
+function SectionService({ isWidthForDesktop }:IProps) {
   const [onSpinning, setOnSpinning] = useState(false);
 
   const memoizedCallbackOnSpin = useCallback(() => {
@@ -39,8 +43,8 @@ function SectionService({ isWidthForDesktop }) {
       }, 2000);
     };
 
-    onSpin(onSpinning);
-  }, [onSpinning]);
+    onSpin();
+  }, []);
 
   useEffect(() => {
     if (!isWidthForDesktop) {

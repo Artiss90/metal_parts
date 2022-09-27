@@ -3,7 +3,13 @@ import partIcon from 'img/Vectorparts.svg';
 import sn from 'classnames';
 import style from './SpinningPart.module.css';
 
-function SpinningPart({ size = 'normal', onSpinning, reverse }) {
+interface IProps {
+  size: 'normal' | 'big',
+  onSpinning: boolean,
+  reverse?: boolean
+}
+
+function SpinningPart({ size = 'normal', onSpinning, reverse }:IProps) {
   return (
     <img
       className={sn(
