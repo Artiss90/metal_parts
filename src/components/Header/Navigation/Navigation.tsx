@@ -4,25 +4,27 @@ import { FormattedMessage } from 'react-intl';
 import sn from 'classnames';
 import style from './Navigation.module.css';
 
-function Navigation(props) {
-  const onChangeCurrentNavLink = e => {
+function Navigation() {
+  const onChangeCurrentNavLink: React.MouseEventHandler<HTMLAnchorElement> = e => {
     //* если таргет это навигационная ссылка, которая не была выбрана ранее
     if (
-      e.target.hasAttribute('data-selected') &&
-      e.target.getAttribute('data-selected') === 'false'
+      e.currentTarget.hasAttribute('data-selected') &&
+      e.currentTarget.getAttribute('data-selected') === 'false'
     ) {
       //* деактивируем выбранную ранее ссылку и активируем текущую
       const linkNavRef = document.querySelector('a[data-selected=true]');
-      linkNavRef.setAttribute('data-selected', 'false');
-      e.target.setAttribute('data-selected', 'true');
+      if (linkNavRef) {
+        linkNavRef.setAttribute('data-selected', 'false');
+        e.currentTarget.setAttribute('data-selected', 'true');
+      }
     }
   };
 
   return (
     <nav>
-      <ul className={style.listNav} onClick={onChangeCurrentNavLink}>
+      <ul className={style.listNav} >
         <li className={style.itemNav}>
-          <a
+          <a onClick={onChangeCurrentNavLink}
             href="#1"
             className={sn(style.linkNav, {
               [style.current]: true,
@@ -33,7 +35,10 @@ function Navigation(props) {
           </a>
         </li>
         <li className={style.itemNav}>
-          <a href="#Service" className={style.linkNav} data-selected={false}>
+          <a onClick={onChangeCurrentNavLink}
+            href="#Service"
+            className={style.linkNav}
+            data-selected={false}> 
             <FormattedMessage
               id="header.nav.services"
               defaultMessage="Услуги"
@@ -41,7 +46,10 @@ function Navigation(props) {
           </a>
         </li>
         <li className={style.itemNav}>
-          <a href="#3" className={style.linkNav} data-selected={false}>
+          <a onClick={onChangeCurrentNavLink}
+            href="#3"
+            className={style.linkNav}
+            data-selected={false}>
             <FormattedMessage
               id="header.nav.ourWork"
               defaultMessage="Наши работы"
@@ -49,12 +57,18 @@ function Navigation(props) {
           </a>
         </li>
         <li className={style.itemNav}>
-          <a href="#OurCompany" className={style.linkNav} data-selected={false}>
+          <a onClick={onChangeCurrentNavLink}
+            href="#OurCompany"
+            className={style.linkNav}
+            data-selected={false}>
             <FormattedMessage id="header.nav.aboutUs" defaultMessage="О нас" />
           </a>
         </li>
         <li className={style.itemNav}>
-          <a href="#Footer" className={style.linkNav} data-selected={false}>
+          <a onClick={onChangeCurrentNavLink}
+            href="#Footer"
+            className={style.linkNav}
+            data-selected={false}>
             <FormattedMessage
               id="header.nav.contacts"
               defaultMessage="Контакты"
