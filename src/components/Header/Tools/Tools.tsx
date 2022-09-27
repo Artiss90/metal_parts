@@ -75,7 +75,7 @@ function Tools() {
               <input
                 type="text"
                 className={style.inputSearch}
-                // placeholder={message}
+                placeholder={message.toString()}
                 value={value}
                 onChange={onChangeSearch}
               />
