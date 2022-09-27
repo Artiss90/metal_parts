@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/metal_parts/static/css/main.31e5f07a.chunk.css",
-    "main.js": "/metal_parts/static/js/main.bc68b852.chunk.js",
-    "main.js.map": "/metal_parts/static/js/main.bc68b852.chunk.js.map",
+    "main.js": "/metal_parts/static/js/main.7fe48852.chunk.js",
+    "main.js.map": "/metal_parts/static/js/main.7fe48852.chunk.js.map",
     "runtime-main.js": "/metal_parts/static/js/runtime-main.303e6eaf.js",
     "runtime-main.js.map": "/metal_parts/static/js/runtime-main.303e6eaf.js.map",
     "static/css/2.59bc1a30.chunk.css": "/metal_parts/static/css/2.59bc1a30.chunk.css",
@@ -40,6 +40,6 @@
     "static/css/2.59bc1a30.chunk.css",
     "static/js/2.0e71ed91.chunk.js",
     "static/css/main.31e5f07a.chunk.css",
-    "static/js/main.bc68b852.chunk.js"
+    "static/js/main.7fe48852.chunk.js"
   ]
 }
